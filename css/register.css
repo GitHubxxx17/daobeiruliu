@@ -55,6 +55,14 @@ a {
 }
 /*清空浮动的代码-end*/
 /* 页面元素初始化和常用样式定义-end */
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?19tb89');
+  src: url('../fonts/icomoon.eot?19tb89#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?19tb89') format('truetype'), url('../fonts/icomoon.woff?19tb89') format('woff'), url('../fonts/icomoon.svg?19tb89#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
 .container {
   margin: 21.01265823vw auto;
   width: 76.96202532vw;
@@ -67,7 +75,7 @@ a {
 .container .logo {
   width: 40.50632911vw;
   height: 10.88607595vw;
-  background-image: url(../img/logo.png);
+  background-image: url(../images/logo.png);
   background-size: cover;
   margin: 0 auto 11.39240506vw;
 }
