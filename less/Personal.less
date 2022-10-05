@@ -1,0 +1,206 @@
+//out:../css/
+
+@import 'base';
+@vw:3.95vw;
+
+.main{
+    position: relative;
+    margin: 0 (15/@vw);
+    margin-top: (54/@vw);
+    margin-bottom: (98/@vw);
+    width: (365/@vw);
+    height: (646/@vw);
+    border-radius: (25/@vw);
+    background-color: rgba(255, 255, 255, 1);
+    text-align: center;
+    border: 1px solid rgba(187, 187, 187, 1);
+
+    .head_portrait{
+        position: absolute;
+        top:(-44/@vw);
+        margin: 0 (91/@vw);
+        width: (183/@vw);
+        height: (183/@vw);
+        border-radius: 100%;
+        background-color: rgba(180, 151, 151, 1);
+        color: rgba(16, 16, 16, 1);
+        font-size: (14/@vw);
+        line-height: (183/@vw);
+        text-align: center;
+        border: 1px solid rgba(187, 187, 187, 1);
+    }
+
+    .setting_fri{
+        display:flex;
+        justify-content: space-between;
+        margin: 0 (37/@vw);
+        margin-top: (119/@vw);
+        width: (291/@vw);
+        height: (47/@vw);
+        line-height: (47/@vw);
+
+        .setting{
+            width: (47/@vw);
+            height: 100%;
+            background-color: rgba(255, 255, 255, 1);
+            color: rgba(16, 16, 16, 1);
+            font-size: (14/@vw);
+            text-align: center;
+            border-radius: 100%;
+            border: 1px solid rgba(187, 187, 187, 1);
+        }
+
+        .fri{
+            width: (47/@vw);
+            height: 100%;
+            background-color: rgba(255, 255, 255, 1);
+            color: rgba(16, 16, 16, 1);
+            font-size: (14/@vw);
+            text-align: center;
+            border-radius: 100%;
+            border: 1px solid rgba(187, 187, 187, 1);
+        }
+    }
+
+    .daily{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 (37/@vw);
+        margin-top: (19/@vw);
+        padding-left: (20/@vw);
+        padding-right: (12/@vw);
+        width: (291/@vw);
+        height: (117/@vw);
+        background-color: rgba(255, 255, 255, 1);
+        text-align: center;
+        border: 1px solid rgba(187, 187, 187, 1);
+
+        .clock{
+            margin: (12/@vw) 0;
+            width: (78/@vw);
+            height: (93/@vw);
+            line-height:  (93/@vw);
+            border-radius: 21px;
+            background-color: rgba(255, 255, 255, 1);
+            color: rgba(16, 16, 16, 1);
+            font-size: (14/@vw);
+            text-align: center;
+            border: 1px solid rgba(187, 187, 187, 1);
+        }
+
+        .right{
+            margin: (12/@vw) 0;
+            width: (173/@vw);
+            height: (93/@vw);
+
+            .points{
+                width: 100%;
+                height: (35/@vw);
+                line-height: (35/@vw);
+                background-color: rgba(255, 255, 255, 1);
+                color: rgba(16, 16, 16, 1);
+                font-size: (14/@vw);
+                text-align: center;
+                border: 1px solid rgba(187, 187, 187, 1);
+            }
+
+            .blank{
+                margin-top: (18/@vw);
+                width: 100%;
+                height: (35/@vw);
+                line-height: (35/@vw);
+                background-color: rgba(255, 255, 255, 1);
+                color: rgba(16, 16, 16, 1);
+                font-size: (14/@vw);
+                text-align: center;
+                border: 1px solid rgba(187, 187, 187, 1);
+            }
+        }
+    }
+
+    .p_m{
+        margin: 0 (37/@vw);
+        margin-top: (8/@vw);
+        width: (291/@vw);
+        height: (303/@vw);
+        background-color: rgba(255, 255, 255, 1);
+        color: rgba(16, 16, 16, 1);
+        font-size: (14/@vw);
+        text-align: center;
+        border: 1px solid rgba(187, 187, 187, 1);
+
+        .common{
+            margin: 0 (16/@vw);
+            margin-top: (8/@vw);
+            width: (259/@vw);
+            background-color: rgba(255, 255, 255, 1);
+            color: rgba(16, 16, 16, 1);
+            font-size: (14/@vw);
+            text-align: center;
+            border: 1px solid rgba(187, 187, 187, 1);
+        }
+
+        .plans{
+            height: (143/@vw);
+            line-height: (143/@vw);
+        }
+
+        .memory{
+            height: (132/@vw);
+            line-height: (132/@vw);
+        }
+    }
+}
+
+.footer_nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 0px;
+    bottom: 0px;
+    width: (395/@vw);
+    height: (80/@vw);
+    padding: 0 (25/@vw);
+    background-color: rgba(255, 255, 255, 1);
+    text-align: center;
+    border: 1px solid rgba(187, 187, 187, 1);
+
+    .common{
+        margin-bottom: (20/@vw);
+        width: (84/@vw);
+        height: (84/@vw);
+        background-color: rgba(255, 255, 255, 1);
+        color: rgba(16, 16, 16, 1);
+        font-size: 14px;
+        line-height:(84/@vw) ;
+        text-align: center;
+        border-radius: 100%;
+        border: 1px solid rgba(187, 187, 187, 1);
+
+        a{
+            display: inline-block;
+            width: (84/@vw);
+            height: (84/@vw);
+        }
+    }
+
+    .function{
+        margin-bottom: (45/@vw);
+        width: (122/@vw);
+        height: (122/@vw);
+        line-height:(122/@vw) ;
+        background-color: rgba(190, 190, 190, 1);
+        color: rgba(16, 16, 16, 1);
+        font-size: 36px;
+        text-align: center;
+        border-radius: 100%;
+        border: 1px solid rgba(187, 187, 187, 1);
+
+        a{
+            display: inline-block;
+            width: (122/@vw);
+            height: (122/@vw);
+        }
+    }
+}

@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rbga(0, 0, 0, 0);
+}
+body {
+  font-family: '微软雅黑';
+}
+img {
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+ol,
+ul {
+  list-style: none;
+}
+input,
+button,
+select,
+textarea {
+  outline: none;
+}
+.ellipsis-2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+/*禁用了文本的拖拉，尤其在谷歌下*/
+textarea {
+  resize: none;
+}
+/*为了使文本段落左右两边对齐*/
+p {
+  text-align: justify;
+  text-justify: distribute;
+}
+/*======== Link ========*/
+a {
+  color: #333;
+  text-decoration: none;
+}
+/*清空浮动的代码-start*/
+.clr:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.clr {
+  *zoom: 1;
+}
+/*清空浮动的代码-end*/
+/* 页面元素初始化和常用样式定义-end */
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?19tb89');
+  src: url('../fonts/icomoon.eot?19tb89#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?19tb89') format('truetype'), url('../fonts/icomoon.woff?19tb89') format('woff'), url('../fonts/icomoon.svg?19tb89#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+.header {
+  display: flex;
+  align-items: center;
+  margin-top: 14.6835443vw;
+  padding: 0 2.78481013vw;
+  width: 100vw;
+  height: 14.17721519vw;
+  opacity: 0.68;
+  background-color: #ffffff;
+  text-align: center;
+  border: 1px solid #bbbbbb;
+}
+.header .search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.26582278vw;
+  width: 56.4556962vw;
+  height: 8.10126582vw;
+  border-radius: 4.05063291vw;
+  background-color: #ffffff;
+  text-align: center;
+  border: 1px solid #bbbbbb;
+}
+.header .search input {
+  padding: 0 1.26582278vw;
+  width: 45.56962025vw;
+  height: 5.06329114vw;
+  border-radius: 4.05063291vw;
+  border: 0;
+}
+.header .search .searchicon {
+  width: 7.08860759vw;
+  height: 7.08860759vw;
+  line-height: 7.08860759vw;
+  background-color: #ffffff;
+  color: #101010;
+  font-size: 3.03797468vw;
+  text-align: center;
+  border-radius: 100%;
+  border: 1px solid #bbbbbb;
+}
+.header .common {
+  width: 12.15189873vw;
+  height: 12.15189873vw;
+  line-height: 12.15189873vw;
+  background-color: #ffffff;
+  color: #101010;
+  font-size: 3.5443038vw;
+  text-align: center;
+  border-radius: 100%;
+  border: 1px solid #bbbbbb;
+}
+.header .callup_icon {
+  margin-left: 11.13924051vw;
+}
+.header .fri {
+  margin-left: 3.03797468vw;
+}
+.banner_body {
+  position: relative;
+  width: 100vw;
+  height: 50.63291139vw;
+  overflow: hidden;
+}
+.banner_body .bannner_swipe {
+  width: 100%;
+  height: 50.63291139vw;
+  display: flex;
+}
+.banner_body .bannner_swipe .banner_swipe_item {
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+}
+.banner_body .bannner_swipe .banner_swipe_item img {
+  height: 100%;
+  width: 100%;
+}
+.banner_body .spots {
+  position: absolute;
+  left: 50%;
+  bottom: 2.53164557vw;
+  margin-left: -15.18987342vw;
+}
+.banner_body .spots span {
+  display: inline-block;
+  width: 2.02531646vw;
+  height: 2.02531646vw;
+  background-color: #dddddd;
+  border-radius: 50%;
+  margin-right: 3.79746835vw;
+}
+.banner_body .spots .active {
+  background-color: #3a3a3a;
+}
+.mould_show {
+  margin: 2.53164557vw;
+  margin-top: 3.5443038vw;
+  margin-bottom: 21.51898734vw;
+  width: 94.93670886vw;
+  height: 108.86075949vw;
+  border-radius: 4.81012658vw;
+  background-color: #ffffff;
+  text-align: center;
+  border: 1px solid #bbbbbb;
+}
+.mould_show .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 2.02531646vw;
+  margin-top: 4.05063291vw;
+  width: 100%;
+  height: 10.12658228vw;
+}
+.mould_show .title .recommend {
+  height: 100%;
+  color: #101010;
+  font-size: 7.08860759vw;
+}
+.mould_show .title .more {
+  height: 100%;
+  color: #9f9f9f;
+  font-size: 3.5443038vw;
+}
+.mould_show .box {
+  margin-top: 3.5443038vw;
+  margin-left: 2.78481013vw;
+  width: 88.35443038vw;
+  height: 25.3164557vw;
+  border-radius: 6.32911392vw;
+  background-color: #ffffff;
+  text-align: center;
+  border: 1px solid #bbbbbb;
+}
+.mould_show .box .enter {
+  margin: 3.5443038vw 0;
+  margin-right: 3.79746835vw;
+  float: right;
+  width: 18.2278481vw;
+  height: 18.2278481vw;
+  background-color: #ffffff;
+  color: #101010;
+  font-size: 3.5443038vw;
+  text-align: center;
+  border-radius: 100%;
+  border: 1px solid #bbbbbb;
+}
+.footer_nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 0px;
+  bottom: 0px;
+  width: 100vw;
+  height: 20.25316456vw;
+  padding: 0 6.32911392vw;
+  background-color: #ffffff;
+  text-align: center;
+  border: 1px solid #bbbbbb;
+}
+.footer_nav .common {
+  margin-bottom: 5.06329114vw;
+  width: 21.26582278vw;
+  height: 21.26582278vw;
+  background-color: #ffffff;
+  color: #101010;
+  font-size: 14px;
+  line-height: 21.26582278vw;
+  text-align: center;
+  border-radius: 100%;
+  border: 1px solid #bbbbbb;
+}
+.footer_nav .common a {
+  display: inline-block;
+  width: 21.26582278vw;
+  height: 21.26582278vw;
+}
+.footer_nav .function {
+  margin-bottom: 11.39240506vw;
+  width: 30.88607595vw;
+  height: 30.88607595vw;
+  line-height: 30.88607595vw;
+  background-color: #bebebe;
+  color: #101010;
+  font-size: 36px;
+  text-align: center;
+  border-radius: 100%;
+  border: 1px solid #bbbbbb;
+}
+.footer_nav .function a {
+  display: inline-block;
+  width: 30.88607595vw;
+  height: 30.88607595vw;
+}

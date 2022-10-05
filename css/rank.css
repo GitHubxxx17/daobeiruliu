@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rbga(0, 0, 0, 0);
+}
+body {
+  font-family: '微软雅黑';
+}
+img {
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+ol,
+ul {
+  list-style: none;
+}
+input,
+button,
+select,
+textarea {
+  outline: none;
+}
+.ellipsis-2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+/*禁用了文本的拖拉，尤其在谷歌下*/
+textarea {
+  resize: none;
+}
+/*为了使文本段落左右两边对齐*/
+p {
+  text-align: justify;
+  text-justify: distribute;
+}
+/*======== Link ========*/
+a {
+  color: #333;
+  text-decoration: none;
+}
+/*清空浮动的代码-start*/
+.clr:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.clr {
+  *zoom: 1;
+}
+/*清空浮动的代码-end*/
+/* 页面元素初始化和常用样式定义-end */
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?19tb89');
+  src: url('../fonts/icomoon.eot?19tb89#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?19tb89') format('truetype'), url('../fonts/icomoon.woff?19tb89') format('woff'), url('../fonts/icomoon.svg?19tb89#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.53164557vw;
+  margin-top: 14.6835443vw;
+  width: 100vw;
+  height: 14.17721519vw;
+  background-color: #ffffff;
+  text-align: center;
+  border: 1px solid #bbbbbb;
+}
+.header .back {
+  width: 11.39240506vw;
+  height: 11.39240506vw;
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 100%;
+  border: 1px solid #bbbbbb;
+}
+.header .menu {
+  width: 30.37974684vw;
+  height: 8.10126582vw;
+  line-height: 8.10126582vw;
+  background-color: #ffffff;
+  color: #415058;
+  font-size: 3.5443038vw;
+  text-align: left;
+  z-index: 2;
+}
+.header .menu .menutitle::after {
+  float: right;
+  font-family: 'icomoon';
+  content: '\e90f';
+  font-size: 5.06329114vw;
+}
+.header .menu .selection {
+  display: none;
+  background-color: #ffffff;
+}
+.header .menu .selection ul li {
+  padding: 0 1.26582278vw;
+}
+.header .menu .selection ul li a {
+  display: block;
+  height: 100%;
+}
+.header .menu .selection ul li a:hover {
+  background-color: #f2f1f1;
+}
+.rank {
+  margin: 0 2.78481013vw;
+  margin-top: 3.03797468vw;
+  margin-bottom: 21.51898734vw;
+  width: 94.43037975vw;
+}
+.rank .rank_con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3.29113924vw;
+  margin-bottom: 3.03797468vw;
+  width: 100%;
+  height: 17.72151899vw;
+  border-radius: 4.81012658vw;
+  background-color: #ffffff;
+  text-align: center;
+  border: 1px solid #bbbbbb;
+}
+.rank .rank_con .name {
+  flex: 1;
+  padding: 0 4.05063291vw;
+  color: #101010;
+  font-size: 5.06329114vw;
+  text-align: left;
+}
+.footer {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 0px;
+  bottom: 0px;
+  padding: 0 2.78481013vw;
+  width: 100vw;
+  height: 19.49367089vw;
+  border-radius: 4.81012658vw;
+  background-color: #ffffff;
+  text-align: center;
+  border: 1px solid #bbbbbb;
+}
+.footer .personal {
+  flex: 1;
+  padding: 0 4.05063291vw;
+  color: #101010;
+  font-size: 5.06329114vw;
+  text-align: left;
+}
+.footer .hide {
+  border: 0px solid #bbbbbb;
+}
+.common {
+  width: 12.15189873vw;
+  height: 12.15189873vw;
+  line-height: 12.15189873vw;
+  background-color: #ffffff;
+  color: #101010;
+  font-size: 3.5443038vw;
+  text-align: center;
+  border-radius: 100%;
+  border: 1px solid #bbbbbb;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>召集令</title>
+    <link rel="stylesheet" href="./css/callup.css">
+    <script src="./js/base.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="back">
+            <a href="./index.html"></a>
+        </div>
+        <div class="title">招募令</div>
+        <div class="back" style="border: 0;"></div>
+    </div>
+    <div class="main">
+        <div class="callup">
+            <div class="call_con">
+                <div class="points_icon">图标</div>
+                <div class="value">12</div>
+                <div class="file_title" id="file_title">文件标题</div>
+            </div>
+            <div class="accept"></div>
+        </div>
+        <div class="callup">
+            <div class="call_con">
+                <div class="points_icon">图标</div>
+                <div class="value">12</div>
+                <div class="file_title">文件标题</div>
+            </div>
+            <div class="accept"></div>
+        </div>
+        <div class="callup">
+            <div class="call_con">
+                <div class="points_icon">图标</div>
+                <div class="value">12</div>
+                <div class="file_title">文件标题</div>
+            </div>
+            <div class="accept"></div>
+        </div>
+        <div class="callup">
+            <div class="call_con">
+                <div class="points_icon">图标</div>
+                <div class="value">12</div>
+                <div class="file_title">文件标题</div>
+            </div>
+            <div class="accept"></div>
+        </div>
+        <div class="callup">
+            <div class="call_con">
+                <div class="points_icon">图标</div>
+                <div class="value">12</div>
+                <div class="file_title">文件标题</div>
+            </div>
+            <div class="accept"></div>
+        </div>
+    </div>
+</body>
+<script>
+    //有个bug需要完善-双击出框之后再在框里面双击会出赋值成了框
+    var clickid = 1; //记录是否是双击
+    var timer = null;
+    //显示input并复制给div
+    function ShowElement(element) {
+        //避免触摸屏幕的时候避免重复赋值
+        if (clickid == 3) {
+            var oldhtml = element.innerHTML;
+        }
+        var newobj = document.createElement('input');
+        //创建新的input元素
+        newobj.type = 'text';
+        //为新增元素添加类型
+        newobj.onblur = function() {
+            //当触发时判断新增元素值是否为空，为空则不修改，并返回原有值
+            element.innerHTML = this.value ? this.value : oldhtml;
+            clickid = 1;
+        }
+        element.innerHTML = '';
+        element.appendChild(newobj);
+    }
+
+    var file_title = document.querySelectorAll(".file_title");
+    for (let x of file_title) {
+        x.addEventListener('touchstart', () => {
+            if (clickid == 1) {
+                startTime = new Date().getTime();
+                clickid++;
+                timer = setTimeout(function() {
+                    // 单击事件触发
+                    clickid = 1;
+                }, 300)
+            }
+
+            if (clickid == 2) {
+                clickid++;
+            } else {
+                var endTime = new Date().getTime();
+                if ((endTime - startTime) < 300) {
+                    // 双击事件触发
+                    ShowElement(x);
+                    clickid = 1;
+                    clearTimeout(timer);
+                }
+            }
+        })
+    }
+</script>
+
+</html>

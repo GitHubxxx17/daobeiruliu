@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>排行榜</title>
+    <link rel="stylesheet" href="./css/rank.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="back"></div>
+        <div class="menu">
+            <span class="menutitle">下拉菜单</span>
+            <div class="selection" id="selection">
+                <ul>
+                    <li>
+                        <a href="#">月积分排行榜</a>
+                    </li>
+                    <li>
+                        <a href="#">地区排行榜</a>
+                    </li>
+                    <li>
+                        <a href="#">学校排行榜</a>
+                    </li>
+                    <li>
+                        <a href="#">点击量排行榜</a>
+                    </li>
+                    <li>
+                        <a href="#">点赞量排行榜</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="rank">
+        <div class="rank_con">
+            <div class="common icon">图标</div>
+            <div class="name">用户名字</div>
+            <div class="common"></div>
+        </div>
+        <div class="rank_con">
+            <div class="common icon">图标</div>
+            <div class="name">用户名字</div>
+            <div class="common"></div>
+        </div>
+        <div class="rank_con">
+            <div class="common icon">图标</div>
+            <div class="name">用户名字</div>
+            <div class="common"></div>
+        </div>
+        <div class="rank_con">
+            <div class="common icon">图标</div>
+            <div class="name">用户名字</div>
+            <div class="common"></div>
+        </div>
+        <div class="rank_con">
+            <div class="common icon">图标</div>
+            <div class="name">用户名字</div>
+            <div class="common"></div>
+        </div>
+        <div class="rank_con">
+            <div class="common icon">图标</div>
+            <div class="name">用户名字</div>
+            <div class="common"></div>
+        </div>
+        <div class="rank_con">
+            <div class="common icon">图标</div>
+            <div class="name">用户名字</div>
+            <div class="common"></div>
+        </div>
+        <div class="rank_con">
+            <div class="common icon">图标</div>
+            <div class="name">用户名字</div>
+            <div class="common"></div>
+        </div>
+        <div class="rank_con">
+            <div class="common icon">图标</div>
+            <div class="name">用户名字</div>
+            <div class="common"></div>
+        </div>
+        <div class="rank_con">
+            <div class="common icon">图标</div>
+            <div class="name">用户名字</div>
+            <div class="common"></div>
+        </div>
+        <div class="rank_con">
+            <div class="common icon">图标</div>
+            <div class="name">用户名字</div>
+            <div class="common"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="common icon">图标</div>
+        <div class="personal">本用户名字</div>
+        <div class="common hide"></div>
+    </div>
+</body>
+<script>
+    var menu = document.querySelector(".menu");
+    var selection = document.getElementById("selection");
+    console.log(selection)
+    menu.addEventListener('touchstart', (event) => {
+        selection.style.display = 'block';
+        event.stopPropagation();
+    })
+    document.addEventListener('touchstart', () => {
+        selection.style.display = 'none';
+    })
+</script>
+
+</html>
