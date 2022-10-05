@@ -32,4 +32,4 @@ function ajax(url, method, req, funC) {
 }
 
 
-export { $, ajax };
+// export { $, ajax };
