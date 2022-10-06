@@ -69,7 +69,7 @@ function createCode() {
     return code;
 }
 
-let inputs = $('.form-control input');
+let inputs = $('.form_control input');
 for(let i = 1;i < inputs.length;i++){
     inputs[i].onfocus = () => {
             $('label')[i].classList.add('label_change');
@@ -145,7 +145,7 @@ $('button').onclick = (e) => {
     // http://192.168.43.169:8000/server
     if (n == 4) {
         let a = [];
-        for (let x of $('.register-data')) {
+        for (let x of $('.register_data')) {
             a.push(x.value);
         }
         ajax('http://8.134.104.234:8080/ReciteMemory/user.do/user.do/Reg', 'post', `phone=${a[0]}&username=${a[1]}&password=${a[2]}`, (str) => {
