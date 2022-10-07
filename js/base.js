@@ -31,5 +31,18 @@ function ajax(url, method, req, funC) {
     }
 }
 
+//读取本地存储数据
+function getData(name) {
+    let data = localStorage.getItem(name);
+    if (data !== null) {
+        //把字符串转换成对象
+        return JSON.parse(data);
+    } else {
+        return [];
+    }
+}
 
-// export { $, ajax };
+//保存本地存储数据
+function saveData(name,data) {
+    localStorage.setItem(name, JSON.stringify(data));
+}

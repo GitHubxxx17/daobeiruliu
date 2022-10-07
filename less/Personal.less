@@ -1,6 +1,7 @@
 //out:../css/
 
 @import 'base';
+@import 'fri_slidebox';
 @vw:3.95vw;
 
 .main{
@@ -9,59 +10,91 @@
     margin-top: (54/@vw);
     margin-bottom: (98/@vw);
     width: (365/@vw);
-    height: (646/@vw);
+    height: (685/@vw);
     border-radius: (25/@vw);
     background-color: rgba(255, 255, 255, 1);
     text-align: center;
     border: 1px solid rgba(187, 187, 187, 1);
 
-    .head_portrait{
-        position: absolute;
-        top:(-44/@vw);
-        margin: 0 (91/@vw);
-        width: (183/@vw);
-        height: (183/@vw);
-        border-radius: 100%;
-        background-color: rgba(180, 151, 151, 1);
-        color: rgba(16, 16, 16, 1);
-        font-size: (14/@vw);
-        line-height: (183/@vw);
-        text-align: center;
-        border: 1px solid rgba(187, 187, 187, 1);
-    }
+    .container{
+        position: relative;
+        width: 100%;
+        height: (195/@vw);
 
-    .setting_fri{
-        display:flex;
-        justify-content: space-between;
-        margin: 0 (37/@vw);
-        margin-top: (119/@vw);
-        width: (291/@vw);
-        height: (47/@vw);
-        line-height: (47/@vw);
-
-        .setting{
-            width: (47/@vw);
-            height: 100%;
-            background-color: rgba(255, 255, 255, 1);
+        .head_portrait{
+            position: absolute;
+            margin-top: (50/@vw);
+            margin-left: (9/@vw);
+            width: (144/@vw);
+            height: (144/@vw);
+            border-radius: 100%;
+            background-color: rgba(180, 151, 151, 1);
             color: rgba(16, 16, 16, 1);
             font-size: (14/@vw);
-            text-align: center;
-            border-radius: 100%;
+            line-height: (144/@vw);
             border: 1px solid rgba(187, 187, 187, 1);
         }
 
-        .fri{
-            width: (47/@vw);
-            height: 100%;
-            background-color: rgba(255, 255, 255, 1);
-            color: rgba(16, 16, 16, 1);
-            font-size: (14/@vw);
-            text-align: center;
-            border-radius: 100%;
-            border: 1px solid rgba(187, 187, 187, 1);
+        .show{
+            position: absolute;
+            left: (160/@vw);
+            top: (70/@vw);
+
+            .name{
+                height: 31px;
+                color: rgba(16, 16, 16, 1);
+                font-size: (20/@vw);
+                
+            }
+
+            .id{
+                height: (20/@vw);
+                color: rgba(16, 16, 16, 1);
+                font-size: (14/@vw);
+                text-align: left;
+            }
+        }
+        
+        .setting_fri{
+            position: absolute;
+            right: (25/@vw);
+            top: (16/@vw);
+    
+            .setting{
+                width: (48/@vw);
+                height: (48/@vw);
+                line-height: (48/@vw);
+                background-color: rgba(255, 255, 255, 1);
+                color: rgba(16, 16, 16, 1);
+                font-size: (14/@vw);
+                text-align: center;
+                border-radius: 100%;
+                border: 1px solid rgba(187, 187, 187, 1);
+                overflow: hidden;
+
+                a {
+                    display: inline-block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+    
+            .fri{
+                margin-top: (8/@vw);
+                width: (48/@vw);
+                height: (48/@vw);
+                line-height: (48/@vw);
+                background-color: rgba(255, 255, 255, 1);
+                color: rgba(16, 16, 16, 1);
+                font-size: (14/@vw);
+                text-align: center;
+                border-radius: 100%;
+                border: 1px solid rgba(187, 187, 187, 1);
+            }
         }
     }
 
+    
     .daily{
         display: flex;
         justify-content: space-between;
@@ -101,6 +134,7 @@
                 color: rgba(16, 16, 16, 1);
                 font-size: (14/@vw);
                 text-align: center;
+                border-radius: (18/@vw);
                 border: 1px solid rgba(187, 187, 187, 1);
             }
 
@@ -113,7 +147,11 @@
                 color: rgba(16, 16, 16, 1);
                 font-size: (14/@vw);
                 text-align: center;
+                border-radius: (18/@vw);
                 border: 1px solid rgba(187, 187, 187, 1);
+                a{
+                    display: block;
+                }
             }
         }
     }
@@ -127,27 +165,48 @@
         color: rgba(16, 16, 16, 1);
         font-size: (14/@vw);
         text-align: center;
+        border-radius: (37/@vw);
         border: 1px solid rgba(187, 187, 187, 1);
+
+        .tab{
+            display: flex;
+            justify-content: space-between;
+            margin-top: (8/@vw);
+            margin-left: (28/@vw);
+            width: (120/@vw);
+            height: (32/@vw);
+            line-height: (32/@vw);
+            text-align: left;
+
+            a{
+                display: block;
+            }
+            
+            .active a{
+                color: #1684fc;
+                border-bottom: 2px solid #1684fc;
+            }
+           
+        }
 
         .common{
             margin: 0 (16/@vw);
             margin-top: (8/@vw);
             width: (259/@vw);
+            height: (240/@vw);
+            line-height: (240/@vw);
             background-color: rgba(255, 255, 255, 1);
             color: rgba(16, 16, 16, 1);
             font-size: (14/@vw);
             text-align: center;
-            border: 1px solid rgba(187, 187, 187, 1);
         }
 
         .plans{
-            height: (143/@vw);
-            line-height: (143/@vw);
+            display: none;     
         }
 
         .memory{
-            height: (132/@vw);
-            line-height: (132/@vw);
+            display: block;
         }
     }
 }

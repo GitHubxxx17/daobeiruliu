@@ -23,11 +23,11 @@ select,
 textarea {
   outline: none;
 }
-.ellipsis-2 {
+.ellipsis {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
 }
 /*禁用了文本的拖拉，尤其在谷歌下*/
@@ -63,54 +63,174 @@ a {
   font-style: normal;
   font-display: block;
 }
+.fri_slidebox {
+  display: none;
+  z-index: 1000;
+  width: 100%;
+  height: 202.02531646vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.312);
+  overflow: hidden;
+}
+.fri_slidebox .slideout {
+  animation: slideout 0.3s ease-in forwards;
+}
+.fri_slidebox .slidein {
+  animation: slidein 0.3s ease-out forwards;
+}
+.fri_slidebox .fri_box {
+  font-size: 3.5443038vw;
+  position: absolute;
+  top: 0;
+  right: -80%;
+  height: 100%;
+  width: 80%;
+  background-color: #fff;
+}
+.fri_slidebox .fri_box .System_notification {
+  width: 100%;
+  height: 21.7721519vw;
+  background-color: #bbf;
+  display: flex;
+  align-items: center;
+  padding: 2.53164557vw 3.03797468vw;
+}
+.fri_slidebox .fri_box .System_notification .System_icon {
+  width: 15.69620253vw;
+  height: 15.69620253vw;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 5.06329114vw;
+}
+.fri_slidebox .fri_box .System_notification .notice {
+  height: 15.69620253vw;
+  width: 53.16455696vw;
+}
+.fri_slidebox .fri_box .System_notification .notice p {
+  margin-top: 2.53164557vw;
+}
+.fri_slidebox .fri_box .fir_li {
+  width: 100%;
+}
+.fri_slidebox .fri_box .fir_li li {
+  margin-top: 3.03797468vw;
+  width: 100%;
+  height: 21.26582278vw;
+  border: 1px solid #bbb;
+  overflow: hidden;
+}
+.fri_slidebox .fri_box .fir_li li a {
+  display: flex;
+  align-items: center;
+  padding: 2.53164557vw 3.03797468vw;
+  width: 100%;
+  height: 100%;
+}
+.fri_slidebox .fri_box .fir_li li .fri_avatar {
+  width: 15.69620253vw;
+  height: 15.69620253vw;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 5.06329114vw;
+}
+.fri_slidebox .fri_box .fir_li li .notice {
+  height: 15.69620253vw;
+  width: 53.16455696vw;
+}
+.fri_slidebox .fri_box .fir_li li .notice p {
+  margin-top: 2.53164557vw;
+}
+@keyframes slideout {
+  0% {
+    right: -80%;
+  }
+  100% {
+    right: 0;
+  }
+}
+@keyframes slidein {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: -80%;
+  }
+}
 .main {
   position: relative;
   margin: 0 3.79746835vw;
   margin-top: 13.67088608vw;
   margin-bottom: 24.81012658vw;
   width: 92.40506329vw;
-  height: 163.5443038vw;
+  height: 173.41772152vw;
   border-radius: 6.32911392vw;
   background-color: #ffffff;
   text-align: center;
   border: 1px solid #bbbbbb;
 }
-.main .head_portrait {
+.main .container {
+  position: relative;
+  width: 100%;
+  height: 49.36708861vw;
+}
+.main .container .head_portrait {
   position: absolute;
-  top: -11.13924051vw;
-  margin: 0 23.03797468vw;
-  width: 46.32911392vw;
-  height: 46.32911392vw;
+  margin-top: 12.65822785vw;
+  margin-left: 2.27848101vw;
+  width: 36.4556962vw;
+  height: 36.4556962vw;
   border-radius: 100%;
   background-color: #b49797;
   color: #101010;
   font-size: 3.5443038vw;
-  line-height: 46.32911392vw;
-  text-align: center;
+  line-height: 36.4556962vw;
   border: 1px solid #bbbbbb;
 }
-.main .setting_fri {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 9.36708861vw;
-  margin-top: 30.12658228vw;
-  width: 73.67088608vw;
-  height: 11.89873418vw;
-  line-height: 11.89873418vw;
+.main .container .show {
+  position: absolute;
+  left: 40.50632911vw;
+  top: 17.72151899vw;
 }
-.main .setting_fri .setting {
-  width: 11.89873418vw;
-  height: 100%;
+.main .container .show .name {
+  height: 31px;
+  color: #101010;
+  font-size: 5.06329114vw;
+}
+.main .container .show .id {
+  height: 5.06329114vw;
+  color: #101010;
+  font-size: 3.5443038vw;
+  text-align: left;
+}
+.main .container .setting_fri {
+  position: absolute;
+  right: 6.32911392vw;
+  top: 4.05063291vw;
+}
+.main .container .setting_fri .setting {
+  width: 12.15189873vw;
+  height: 12.15189873vw;
+  line-height: 12.15189873vw;
   background-color: #ffffff;
   color: #101010;
   font-size: 3.5443038vw;
   text-align: center;
   border-radius: 100%;
   border: 1px solid #bbbbbb;
+  overflow: hidden;
 }
-.main .setting_fri .fri {
-  width: 11.89873418vw;
+.main .container .setting_fri .setting a {
+  display: inline-block;
+  width: 100%;
   height: 100%;
+}
+.main .container .setting_fri .fri {
+  margin-top: 2.02531646vw;
+  width: 12.15189873vw;
+  height: 12.15189873vw;
+  line-height: 12.15189873vw;
   background-color: #ffffff;
   color: #101010;
   font-size: 3.5443038vw;
@@ -156,6 +276,7 @@ a {
   color: #101010;
   font-size: 3.5443038vw;
   text-align: center;
+  border-radius: 4.55696203vw;
   border: 1px solid #bbbbbb;
 }
 .main .daily .right .blank {
@@ -167,7 +288,11 @@ a {
   color: #101010;
   font-size: 3.5443038vw;
   text-align: center;
+  border-radius: 4.55696203vw;
   border: 1px solid #bbbbbb;
+}
+.main .daily .right .blank a {
+  display: block;
 }
 .main .p_m {
   margin: 0 9.36708861vw;
@@ -178,25 +303,42 @@ a {
   color: #101010;
   font-size: 3.5443038vw;
   text-align: center;
+  border-radius: 9.36708861vw;
   border: 1px solid #bbbbbb;
+}
+.main .p_m .tab {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.02531646vw;
+  margin-left: 7.08860759vw;
+  width: 30.37974684vw;
+  height: 8.10126582vw;
+  line-height: 8.10126582vw;
+  text-align: left;
+}
+.main .p_m .tab a {
+  display: block;
+}
+.main .p_m .tab .active a {
+  color: #1684fc;
+  border-bottom: 2px solid #1684fc;
 }
 .main .p_m .common {
   margin: 0 4.05063291vw;
   margin-top: 2.02531646vw;
   width: 65.56962025vw;
+  height: 60.75949367vw;
+  line-height: 60.75949367vw;
   background-color: #ffffff;
   color: #101010;
   font-size: 3.5443038vw;
   text-align: center;
-  border: 1px solid #bbbbbb;
 }
 .main .p_m .plans {
-  height: 36.20253165vw;
-  line-height: 36.20253165vw;
+  display: none;
 }
 .main .p_m .memory {
-  height: 33.41772152vw;
-  line-height: 33.41772152vw;
+  display: block;
 }
 .footer_nav {
   position: fixed;

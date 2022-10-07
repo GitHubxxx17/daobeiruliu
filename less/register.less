@@ -2,10 +2,6 @@
 
 @vw: 3.95vw;
 
-body {
-    // background-image: url(../img/pic0016.jpg); 
-    // background-size: cover;
-}
 
 .container {
     margin: (83 / @vw) auto;
@@ -35,8 +31,8 @@ body {
         position: relative;
 
         .err {
+            display: none;
             z-index: 10;
-            opacity: 0;
             width: 45%;
             height: (28 / @vw);
             position: absolute;
@@ -75,7 +71,7 @@ body {
         }
 
         .show {
-            opacity: 1 !important;
+            display: block;
         }
 
         .phoneErr {
@@ -103,6 +99,7 @@ body {
             position: relative;
             font-size: (16 / @vw);
             color: #fff;
+
             label {
                 position: absolute;
                 top: (18 / @vw);
@@ -126,10 +123,10 @@ body {
             font-size: (16 / @vw);
             border: none;
             color: #fff;
-            border-bottom: 2px solid #000;
+            border-bottom: (2 / @vw) solid #000;
 
             &:focus {
-                border-bottom: 2px solid rgb(255, 127, 246);
+                border-bottom: (2 / @vw) solid rgb(151, 255, 222);
             }
         }
 
@@ -163,11 +160,23 @@ body {
             }
         }
 
+        .login {
+            width: 100%;
+            height: (24/@vw);
+            display: flex;
+            justify-content: center;
+            a {
+                height: 100%;
+                line-height: (24/@vw);
+                font-size: (14/@vw);
+                color: rgba(16, 16, 16, 1);
+            }
+        }
 
         button {
             position: relative;
             cursor: pointer;
-            margin-top: (41 / @vw);
+            margin-top: (10 / @vw);
             font-size: (20 / @vw);
             height: (58 / @vw);
             width: (248 / @vw);
@@ -176,7 +185,7 @@ body {
             font-weight: bolder;
             border: 0;
             overflow: hidden;
-            background-color: #182848;
+            background-color: transparent;
             color: #fff;
 
             span {
@@ -222,7 +231,7 @@ body {
                     animation-delay: .75s;
                 }
             }
-        } 
+        }
     }
 
     .edition {
@@ -238,6 +247,7 @@ body {
     0% {
         left: -100%;
     }
+
     50%,
     100% {
         left: 100%;

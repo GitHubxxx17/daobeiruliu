@@ -69,61 +69,64 @@ function createCode() {
     return code;
 }
 
+
 let inputs = $('.form_control input');
-for(let i = 1;i < inputs.length;i++){
-    inputs[i].onfocus = () => {
-            $('label')[i].classList.add('label_change');
-    }
+let labelStrArr = [];
+for (let i = 0; i < inputs.length; i++) {
+    labelStrArr.push($('label')[i].innerHTML);
     inputs[i].onblur = () => {
-        if(inputs[i].value != ''){
+        if (i < 2) {
+            //获取对应的正则表达式
+            let reg = new RegExp(`${inputs[i].pattern}`);
+            let url = '';
+
+            if (i == 0)
+                url = `http://8.134.104.234:8080/ReciteMemory/inf.get/checkUsedNumber?phone=${inputs[i].value}`;
+            else
+                url = `http://8.134.104.234:8080/ReciteMemory/inf.get/checkUserNickName?username=${inputs[i].value}`;
+            //如果格式正确则发送get请求
+            if (reg.test(inputs[i].value)) {
+                ajax(url, 'get', '', (str) => {
+
+                    let newstr = JSON.parse(str).msg;
+                    console.log(newstr);
+                    if (!newstr.data) {
+                        $('label')[i].innerHTML = newstr.content;
+                        $('label')[i].style.color = 'red';
+                    }
+                })
+            }
+        }
+        //当input失焦时，如果内容为空删除动画，否则添加
+        if (inputs[i].value != '') {
             $('label')[i].classList.add('label_change');
-        }else{
+        } else {
             $('label')[i].classList.remove('label_change');
         }
     }
-}
-
-let phone = $('input[name="phone"]')
-let username = $('input[name="username"]')
-let reg1 = new RegExp(`${phone.pattern}`)
-let reg2 = new RegExp(`${username.pattern}`)
-phone.onblur = (e) => {
-    if (reg1.test(phone.value)) {
-        // ajax(`http://8.134.104.234:8080/ReciteMemory/user.do/user.do/Reg?phone=${phone.value}`, 'get', phone.value, (str) => {
-        //     console.log(str);
-        //     if (str == '该手机号已注册') {
-        //         $('.phoneErr').classList.add('show');
-        //         e.stopPropagation();
-        //     }
-        // })
-    }
-    if(phone.value != ''){
-        $('label')[0].classList.add('label_change');
-    }else{
-        $('label')[0].classList.remove('label_change');
+    //当点击input给label添加动画
+    inputs[i].onfocus = () => {
+        $('label')[i].innerHTML = labelStrArr[i];
+        $('label')[i].style.color = '#fff';
+        $('label')[i].classList.add('label_change');
     }
 }
-
-phone.onfocus = () => {
-    $('.phoneErr').classList.remove('show');
-    $('label')[0].classList.add('label_change');
-}
-
-
 
 let pw = $('input[type="password"]');
 
 //点击注册后进行判断
 $('button').onclick = (e) => {
     let n = 0;
+    let reg1 = new RegExp(`${inputs[0].pattern}`);
+    let reg2 = new RegExp(`${inputs[1].pattern}`);
 
     //判断手机号格式是否正确
-    if (reg1.test(phone.value)) {
+    if (reg1.test(inputs[0].value)) {
         n++;
     }
 
     //判断昵称格式是否正确
-    if (reg2.test(username.value)) {
+    if (reg2.test(inputs[1].value)) {
         n++;
     }
 
@@ -139,17 +142,22 @@ $('button').onclick = (e) => {
     if ($('.captcha input').value.toUpperCase() != code.toUpperCase()) {
         $('.captchaErr').classList.add('show');
         e.stopPropagation();
-    }else{
+    } else {
         n++;
     }
-    // http://192.168.43.169:8000/server
+
     if (n == 4) {
         let a = [];
         for (let x of $('.register_data')) {
             a.push(x.value);
         }
-        ajax('http://8.134.104.234:8080/ReciteMemory/user.do/user.do/Reg', 'post', `phone=${a[0]}&username=${a[1]}&password=${a[2]}`, (str) => {
-            console.log(str);
+        ajax('http://8.134.104.234:8080/ReciteMemory/user.do/Reg', 'post', `phone=${a[0]}&password=${a[2]}&username=${a[1]}`, (str) => {
+            let newstr = JSON.parse(str).msg;
+            if(newstr.data){
+                location.href = './index.html';
+            }else{
+                alert('注册失败，请重新注册');
+            }
         })
     }
 }

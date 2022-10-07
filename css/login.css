@@ -23,11 +23,11 @@ select,
 textarea {
   outline: none;
 }
-.ellipsis-2 {
+.ellipsis {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
 }
 /*禁用了文本的拖拉，尤其在谷歌下*/
@@ -91,6 +91,20 @@ a {
   font-size: 4.05063291vw;
   color: #fff;
 }
+.login_box .form .form_control input {
+  background-color: transparent;
+  padding: 2.02531646vw 0;
+  height: 12.15189873vw;
+  width: 62.78481013vw;
+  margin: 1.51898734vw 0;
+  font-size: 4.05063291vw;
+  border: none;
+  color: #fff;
+  border-bottom: 2px solid #000;
+}
+.login_box .form .form_control input:focus {
+  border-bottom: 2px solid #ff7ff6;
+}
 .login_box .form .form_control label {
   position: absolute;
   top: 4.55696203vw;
@@ -102,19 +116,13 @@ a {
 .login_box .form .form_control .label_change {
   transform: scale(0.8) translateY(-5.56962025vw);
 }
-.login_box .form input {
-  background-color: transparent;
-  padding: 2.02531646vw 0;
-  height: 12.15189873vw;
-  width: 62.78481013vw;
-  margin: 1.51898734vw 0;
-  font-size: 4.05063291vw;
-  border: none;
-  color: #fff;
-  border-bottom: 2px solid #000;
-}
-.login_box .form input:focus {
-  border-bottom: 2px solid #ff7ff6;
+.login_box .form .err {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  color: red;
+  transition: 0.2s;
 }
 .login_box .form .login {
   position: relative;
@@ -188,7 +196,7 @@ a {
 .login_box .form .items span {
   float: left;
   height: 6.07594937vw;
-  line-height: 24px;
+  line-height: 6.07594937vw;
   margin-left: 1.01265823vw;
   font-size: 3.5443038vw;
   text-align: left;
@@ -199,7 +207,7 @@ a {
 .login_box .form .items .register a {
   display: inline-block;
   height: 6.07594937vw;
-  line-height: 24px;
+  line-height: 6.07594937vw;
   font-size: 3.5443038vw;
   color: #101010;
   text-align: center;

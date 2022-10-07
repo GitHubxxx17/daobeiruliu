@@ -23,11 +23,11 @@ select,
 textarea {
   outline: none;
 }
-.ellipsis-2 {
+.ellipsis {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
 }
 /*禁用了文本的拖拉，尤其在谷歌下*/
@@ -62,6 +62,101 @@ a {
   font-weight: normal;
   font-style: normal;
   font-display: block;
+}
+.fri_slidebox {
+  display: none;
+  z-index: 1000;
+  width: 100%;
+  height: 202.02531646vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.312);
+  overflow: hidden;
+}
+.fri_slidebox .slideout {
+  animation: slideout 0.3s ease-in forwards;
+}
+.fri_slidebox .slidein {
+  animation: slidein 0.3s ease-out forwards;
+}
+.fri_slidebox .fri_box {
+  font-size: 3.5443038vw;
+  position: absolute;
+  top: 0;
+  right: -80%;
+  height: 100%;
+  width: 80%;
+  background-color: #fff;
+}
+.fri_slidebox .fri_box .System_notification {
+  width: 100%;
+  height: 21.7721519vw;
+  background-color: #bbf;
+  display: flex;
+  align-items: center;
+  padding: 2.53164557vw 3.03797468vw;
+}
+.fri_slidebox .fri_box .System_notification .System_icon {
+  width: 15.69620253vw;
+  height: 15.69620253vw;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 5.06329114vw;
+}
+.fri_slidebox .fri_box .System_notification .notice {
+  height: 15.69620253vw;
+  width: 53.16455696vw;
+}
+.fri_slidebox .fri_box .System_notification .notice p {
+  margin-top: 2.53164557vw;
+}
+.fri_slidebox .fri_box .fir_li {
+  width: 100%;
+}
+.fri_slidebox .fri_box .fir_li li {
+  margin-top: 3.03797468vw;
+  width: 100%;
+  height: 21.26582278vw;
+  border: 1px solid #bbb;
+  overflow: hidden;
+}
+.fri_slidebox .fri_box .fir_li li a {
+  display: flex;
+  align-items: center;
+  padding: 2.53164557vw 3.03797468vw;
+  width: 100%;
+  height: 100%;
+}
+.fri_slidebox .fri_box .fir_li li .fri_avatar {
+  width: 15.69620253vw;
+  height: 15.69620253vw;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 5.06329114vw;
+}
+.fri_slidebox .fri_box .fir_li li .notice {
+  height: 15.69620253vw;
+  width: 53.16455696vw;
+}
+.fri_slidebox .fri_box .fir_li li .notice p {
+  margin-top: 2.53164557vw;
+}
+@keyframes slideout {
+  0% {
+    right: -80%;
+  }
+  100% {
+    right: 0;
+  }
+}
+@keyframes slidein {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: -80%;
+  }
 }
 header {
   width: 100%;
