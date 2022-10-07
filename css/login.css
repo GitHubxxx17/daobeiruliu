@@ -43,6 +43,7 @@ p {
 a {
   color: #333;
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
 }
 /*清空浮动的代码-start*/
 .clr:after {

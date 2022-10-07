@@ -43,6 +43,7 @@ p {
 a {
   color: #333;
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
 }
 /*清空浮动的代码-start*/
 .clr:after {
@@ -313,6 +314,7 @@ header .header_right .header_btn:first-child {
   text-align: center;
   border-radius: 100%;
   border: 1px solid #bbbbbb;
+  overflow: hidden;
 }
 .footer_nav .common a {
   display: inline-block;
@@ -330,6 +332,7 @@ header .header_right .header_btn:first-child {
   text-align: center;
   border-radius: 100%;
   border: 1px solid #bbbbbb;
+  overflow: hidden;
 }
 .footer_nav .function a {
   display: inline-block;
