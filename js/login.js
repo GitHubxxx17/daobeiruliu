@@ -46,10 +46,10 @@ $('.login').onclick = (e) => {
                     let newstr = JSON.parse(str).msg;
                     let userInfo = newstr.data.user;
                     curr['userInfo'] = userInfo;
+                    console.log(curr);
                     saveData('current_user', curr);
-                })
-
-                location.href = './index.html';
+                    location.href = './index.html';
+                })             
             }
             //如果返回的结果错误则提醒
             else {
