@@ -94,6 +94,12 @@ for (let i = 0; i < inputs.length; i++) {
                         $('label')[i].style.color = 'red';
                     }
                 })
+            }else if(inputs[i].value != ''){
+                if(i == 0)
+                    $('label')[i].innerHTML = '手机号格式错误';
+                else
+                    $('label')[i].innerHTML = '昵称格式错误';
+                $('label')[i].style.color = 'red';
             }
         }
         //当input失焦时，如果内容为空删除动画，否则添加
