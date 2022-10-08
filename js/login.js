@@ -56,5 +56,7 @@ $('.login').onclick = (e) => {
                 $('.err').style.opacity = '1';
             }
         })
+    }else {
+        $('.err').style.opacity = '1';
     }
 }
