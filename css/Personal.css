@@ -183,7 +183,8 @@ a {
   width: 36.4556962vw;
   height: 36.4556962vw;
   border-radius: 100%;
-  background-color: #b49797;
+  background-image: url(../images/头像男-1.jpg);
+  background-size: cover;
   color: #101010;
   font-size: 3.5443038vw;
   line-height: 36.4556962vw;
@@ -195,7 +196,7 @@ a {
   top: 17.72151899vw;
 }
 .main .container .show .name {
-  height: 31px;
+  height: 7.84810127vw;
   color: #101010;
   font-size: 5.06329114vw;
 }
@@ -214,12 +215,12 @@ a {
   width: 12.15189873vw;
   height: 12.15189873vw;
   line-height: 12.15189873vw;
-  background-color: #ffffff;
+  background-image: url(../images/设置.png);
+  background-size: cover;
   color: #101010;
   font-size: 3.5443038vw;
   text-align: center;
   border-radius: 100%;
-  border: 1px solid #bbbbbb;
   overflow: hidden;
 }
 .main .container .setting_fri .setting a {
@@ -257,7 +258,7 @@ a {
   width: 19.74683544vw;
   height: 23.5443038vw;
   line-height: 23.5443038vw;
-  border-radius: 21px;
+  border-radius: 5.3164557vw;
   background-color: #ffffff;
   color: #101010;
   font-size: 3.5443038vw;
@@ -361,7 +362,7 @@ a {
   height: 21.26582278vw;
   background-color: #ffffff;
   color: #101010;
-  font-size: 14px;
+  font-size: 3.5443038vw;
   line-height: 21.26582278vw;
   text-align: center;
   border-radius: 100%;
@@ -380,7 +381,7 @@ a {
   line-height: 30.88607595vw;
   background-color: #bebebe;
   color: #101010;
-  font-size: 36px;
+  font-size: 9.11392405vw;
   text-align: center;
   border-radius: 100%;
   border: 1px solid #bbbbbb;

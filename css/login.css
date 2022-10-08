@@ -64,6 +64,10 @@ a {
   font-style: normal;
   font-display: block;
 }
+body {
+  background-image: url(../images/登录-2.jpg);
+  background-size: cover;
+}
 .login_box {
   position: relative;
   margin: 21.01265823vw auto;
@@ -137,7 +141,7 @@ a {
   font-weight: bolder;
   border: 0;
   overflow: hidden;
-  background-color: #182848;
+  background-color: transparent;
   color: #fff;
 }
 .login_box .form .login span {

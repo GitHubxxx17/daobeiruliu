@@ -26,29 +26,33 @@ $('.login').onclick = (e) => {
         for (let x of $('.login_data')) {
             a.push(x.value);
         }
+
         ajax('http://8.134.104.234:8080/ReciteMemory/user.do/Login', 'post', `phone=${a[0]}&password=${a[1]}`, (str) => {
-            console.log(str);
             let newstr = JSON.parse(str).msg;
             console.log(newstr);
             //登录成功
-            if(newstr.data){
+            if (newstr.data.isSuccess) {
                 //将当前登录的用户手机号保存到本地
-                let curr = getData('current_user');
-                console.log(curr);
-                curr = {phone:a[0]};
-                saveData('current_user',curr);
+                let curr = {};
+
                 //如果用户勾选自动登录，则将数据存储在本地
-                if($('.auto').checked){
-                    let local = getData('user');
-                    console.log(local);
-                    local.push({phone:a[0],password:a[1]});
-                    saveData('user',local);
+                if ($('.auto').checked) {
+                    curr['auto'] = true;
+                }else{
+                    curr['auto'] = false;
                 }
-                    
+                // 获取登录用户的信息
+                ajax(`http://8.134.104.234:8080/ReciteMemory/user.do/UserMsg?userId=${newstr.data.userId}`, 'get', '', (str) => {
+                    let newstr = JSON.parse(str).msg;
+                    let userInfo = newstr.data.user;
+                    curr['userInfo'] = userInfo;
+                    saveData('current_user', curr);
+                })
+
                 location.href = './index.html';
             }
             //如果返回的结果错误则提醒
-            else{
+            else {
                 $('.err').style.opacity = '1';
             }
         })

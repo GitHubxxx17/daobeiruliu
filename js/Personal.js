@@ -34,14 +34,10 @@ $('.setting_fri .fri').onclick = () => {
 
 $('.fri_box').onclick = (e) => e.stopPropagation();
 
-
-let user = getData('user');
-let curr = getData('current_user');
-console.log(user);
-console.log(curr);
 window.onload = () => {
-    ajax(`http://8.134.104.234:8080/ReciteMemory/user.do/UserMsg`,'get','',(str) => {
-        // let newstr = JSON.parse(str).msg;
-        console.log(str);
-    })
+    let curr = getData('current_user');
+    if(curr){
+        $('.show .name').innerHTML = curr.userInfo.nickName;
+        $('.show .id').innerHTML = `ID号: ${curr.userInfo.userId}`;
+    }
 }

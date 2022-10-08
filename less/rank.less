@@ -1,28 +1,31 @@
 //out:../css/
 @import 'base';
-@vw:3.95vw;
+@vw: 3.95vw;
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 (10/@vw);
     width: (395/@vw);
     height: (56/@vw);
-    background-color: rgba(255, 255, 255, 1);
+    background-image: url(../images/顶栏-1.jpg);
+    background-size: cover;
     text-align: center;
     border: 1px solid rgba(187, 187, 187, 1);
 
-    .back{
+    .back {
         width: (45/@vw);
         height: (45/@vw);
-        background-color: rgba(255, 255, 255, 1);
+        background-color: transparent;
+        background-image: url(../images/返回.png);
+        background-size: cover;
         text-align: center;
         border-radius: 100%;
         border: 1px solid rgba(187, 187, 187, 1);
     }
 
-    .menu{
+    .menu {
         width: (120/@vw);
         height: (32/@vw);
         line-height: ((32/@vw));
@@ -31,37 +34,42 @@
         font-size: (14/@vw);
         text-align: left;
         z-index: 2;
-        .menutitle::after{
+
+        .menutitle::after {
             float: right;
             font-family: 'icomoon';
             content: '\e90f';
             font-size: (20/@vw);
         }
 
-        .selection{
+        .selection {
             display: none;
             background-color: #ffffff;
-            ul li{
+
+            ul li {
                 padding: 0 (5/@vw);
-                a{
+
+                a {
                     display: block;
                     height: 100%;
-                    &:hover{
+
+                    &:hover {
                         background-color: #f2f1f1;
                     }
-                }  
+                }
             }
         }
     }
 }
 
 
-.rank{
+.rank {
     margin: 0 (11/@vw);
     margin-top: (12/@vw);
     margin-bottom: (85/@vw);
-    width:(373/@vw);
-    .rank_con{
+    width: (373/@vw);
+
+    .rank_con {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -73,8 +81,8 @@
         background-color: rgba(255, 255, 255, 1);
         text-align: center;
         border: 1px solid rgba(187, 187, 187, 1);
-    
-        .name{
+
+        .name {
             flex: 1;
             padding: 0 (16/@vw);
             color: rgba(16, 16, 16, 1);
@@ -84,7 +92,7 @@
     }
 }
 
-.footer{
+.footer {
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -99,7 +107,7 @@
     text-align: center;
     border: 1px solid rgba(187, 187, 187, 1);
 
-    .personal{
+    .personal {
         flex: 1;
         padding: 0 (16/@vw);
         color: rgba(16, 16, 16, 1);
@@ -107,12 +115,12 @@
         text-align: left;
     }
 
-    .hide{
+    .hide {
         border: 0px solid rgba(187, 187, 187, 1);
     }
 }
 
-.common{
+.common {
     width: (48/@vw);
     height: (48/@vw);
     line-height: (48/@vw);

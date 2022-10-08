@@ -165,8 +165,8 @@ a {
   padding: 0 2.78481013vw;
   width: 100vw;
   height: 14.17721519vw;
-  opacity: 0.68;
-  background-color: #ffffff;
+  background-image: url(../images/顶栏-1.jpg);
+  background-size: cover;
   text-align: center;
   border: 1px solid #bbbbbb;
 }
@@ -193,12 +193,14 @@ a {
   width: 7.08860759vw;
   height: 7.08860759vw;
   line-height: 7.08860759vw;
-  background-color: #ffffff;
+  background-image: url(../images/搜索.png);
+  background-size: cover;
   color: #101010;
   font-size: 3.03797468vw;
   text-align: center;
   border-radius: 100%;
-  border: 1px solid #bbbbbb;
+  background-color: #fff;
+  border: none;
 }
 .header .common {
   width: 12.15189873vw;

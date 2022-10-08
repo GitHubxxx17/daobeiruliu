@@ -2,16 +2,12 @@
 
 @vw: 3.95vw;
 
-body {
-    background-image: url(../img/pic0016.jpg);
-    background-size: cover;
-}
-
 header {
     position: relative;
     width: 100%;
     height: (56 / @vw);
-    background-color: #fff;
+    background-image: url(../images/顶栏-1.jpg);
+    background-size: cover;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,6 +16,13 @@ header {
 
     .header_left {
         overflow: hidden;
+
+        .header_btn {
+            background-color: transparent;
+            background-image: url(../images/返回.png);
+            background-size: cover;
+        }
+
 
         a {
             display: inline-block;
@@ -31,8 +34,10 @@ header {
     .header_right {
         display: flex;
         align-items: center;
+
         .header_btn {
             margin-right: (5 / @vw);
+
             &:last-child {
                 margin-right: 0;
             }
@@ -44,7 +49,7 @@ header {
         z-index: 10;
         width: (45 / @vw);
         height: (45 / @vw);
-        border: 1px solid #bbb;
+        border: none;
         border-radius: 50%;
         text-align: center;
         line-height: (45 / @vw);
@@ -80,16 +85,15 @@ header {
             padding: (20 / @vw) (10 / @vw);
             width: (363 / @vw);
             height: (633 / @vw);
-            // background-color: rgb(112, 150, 255);
-            backdrop-filter: blur(10px);
+            background-color: rgb(112, 150, 255);
             transition: transform 2s ease-in-out, z-index 2s ease-in-out;
             transform-origin: left center;
             border: 1px solid #bbb;
             line-height: (30 / @vw);
 
-            // &:nth-child(even) {
-            //     background-color: rgb(208, 127, 255);
-            // }
+            &:nth-child(even) {
+                background-color: rgb(208, 127, 255);
+            }
 
             .highlight {
                 display: inline;
@@ -143,4 +147,3 @@ header {
         }
     }
 }
-

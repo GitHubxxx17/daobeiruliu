@@ -73,12 +73,25 @@ header {
   justify-content: space-between;
   border: 0.25316456vw solid #bbb;
   font-size: 3.5443038vw;
+  background-image: url(../images/顶栏-1.jpg);
+  background-size: cover;
+}
+header .header_left .header_btn {
+  background-color: transparent;
+  background-image: url(../images/返回.png);
+  background-size: cover;
+}
+header .header_right .header_btn {
+  background-color: transparent;
+  background-image: url(../images/设置.png);
+  background-size: cover;
 }
 header .header_btn {
   width: 11.39240506vw;
   height: 11.39240506vw;
   border-radius: 50%;
-  border: 0.25316456vw solid #bbb;
+  background-color: #fff;
+  border: none;
   overflow: hidden;
 }
 header .header_btn a {

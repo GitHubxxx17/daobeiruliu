@@ -64,6 +64,10 @@ a {
   font-style: normal;
   font-display: block;
 }
+body {
+  background-image: url(../images/登录-1.jpg);
+  background-size: cover;
+}
 .container {
   margin: 21.01265823vw auto;
   width: 76.96202532vw;
@@ -195,6 +199,7 @@ a {
   width: 48%;
   height: 12.15189873vw;
   background-color: #fff;
+  border: 1px solid #000000;
 }
 .container form .login {
   width: 100%;

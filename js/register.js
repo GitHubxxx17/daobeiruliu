@@ -87,7 +87,6 @@ for (let i = 0; i < inputs.length; i++) {
             //如果格式正确则发送get请求
             if (reg.test(inputs[i].value)) {
                 ajax(url, 'get', '', (str) => {
-
                     let newstr = JSON.parse(str).msg;
                     console.log(newstr);
                     if (!newstr.data) {
@@ -153,9 +152,19 @@ $('button').onclick = (e) => {
         }
         ajax('http://8.134.104.234:8080/ReciteMemory/user.do/Reg', 'post', `phone=${a[0]}&password=${a[2]}&username=${a[1]}`, (str) => {
             let newstr = JSON.parse(str).msg;
-            if(newstr.data){
+            if (newstr.data.isSuccess) {
+                //将当前登录的用户手机号保存到本地
+                let curr = {};
+                // 获取登录用户的信息
+                ajax(`http://8.134.104.234:8080/ReciteMemory/user.do/UserMsg?userId=${newstr.data.userId}`, 'get', '', (str) => {
+                    let newstr = JSON.parse(str).msg;
+                    let userInfo = newstr.data.user;
+                    curr['userInfo'] = userInfo;
+                    saveData('current_user', curr);
+                })
+
                 location.href = './index.html';
-            }else{
+            } else {
                 alert('注册失败，请重新注册');
             }
         })

@@ -168,35 +168,71 @@ function CancelHollowing(e, n) {
 }
 
 let textPage = $('.text_page');
-let numberOfPages = $('.number_of_pages');
-let pages = textPage.length;
-let pageNow = 0;
-numberOfPages.innerHTML = `1/${pages}`
-for (let i = 0; i < pages; i++) {
-    textPage[i].style.zIndex = `${pages - i}`;
+TextOverflow(textPage, textPage.innerHTML);
+function TextOverflow(box, str) {
+    // 如果盒子的内容溢出
+    if (box.offsetHeight < box.scrollHeight) {
+        // 记录溢出的第一个字符的序号
+        let i;
+        // 对盒子中的字符串重新循环一个一个的添加进盒子
+        for (i = 0; i < str.length; i++) {
+            box.innerHTML = str.substring(0, i);
+            // 如果内容溢出则跳出循环
+            if (box.offsetHeight < box.scrollHeight) {
+                break;
+            }
+        }
+        // 如果刚好溢出则结束函数
+        if (i == str.length - 1)
+            return;
+        // 将内容填入盒子
+        box.innerHTML = str.substring(0, i - 1);
+        // 创建新盒子并赋予类，将盒子添加进总页面中
+        let newbox = document.createElement('div');
+        newbox.className = 'text_page';
+        $('.total_text').appendChild(newbox);
+        newbox.innerHTML = str.substring(i - 1);
+        // 递归
+        TextOverflow(newbox, str.substring(i - 1));
+    } 
+    // 内容不溢出就直接就字符串添加进去
+    else {
+        box.innerHTML = str;
+    }
 }
 
+
+
+let numberOfPages = $('.number_of_pages');
+let pages = $('.text_page').length;
+let pageNow = 0;
+//如果有分页，则修改页数和层数
+if (pages) {
+    numberOfPages.innerHTML = `1/${pages}`
+    for (let i = 0; i < pages; i++) {
+        $('.text_page')[i].style.zIndex = `${pages - i}`;
+    }
+}
+
+//点击切换下一页
+$('.pageDown').onclick = () => {
+    if (pageNow < pages - 1) {
+        $('.text_page')[pageNow].style.zIndex = 0;
+        $('.text_page')[pageNow].style.transform = 'rotateY(360deg)';
+        pageNow++;
+        numberOfPages.innerHTML = `${pageNow + 1}/${pages}`
+    }
+}
+//点击切换上一页
 $('.pageUp').onclick = () => {
     if (pageNow > 0) {
-        textPage[pageNow - 1].style.zIndex = pages - pageNow + 1;
-        textPage[pageNow - 1].style.transform = 'rotateY(0)';
+        $('.text_page')[pageNow - 1].style.zIndex = pages - pageNow + 1;
+        $('.text_page')[pageNow - 1].style.transform = 'rotateY(0)';
         pageNow--;
         numberOfPages.innerHTML = `${pageNow + 1}/${pages}`
     }
 }
 
-$('.pageDown').onclick = () => {
-    if (pageNow < pages - 1) {
-        textPage[pageNow].style.zIndex = 0;
-        textPage[pageNow].style.transform = 'rotateY(360deg)';
-        pageNow++;
-        numberOfPages.innerHTML = `${pageNow + 1}/${pages}`
-    }
-}
 
-// let reg = /\n/
-// let text = textPage[0].innerHTML;
-// for(let i = 0;i < text.length;i++){
-//     console.log(reg.test(text[i]));
-// }
+
 

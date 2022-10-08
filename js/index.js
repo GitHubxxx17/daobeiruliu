@@ -3,7 +3,7 @@ let bannnerSwipe = document.getElementById("bannner_swipe");
 let bannerSwipeItem = document.getElementsByClassName("banner_swipe_item");
 let itemImg = document.getElementsByClassName("itemImg");
 
-console.log(bannerSwipeItem[0].classList);
+
 bannnerSwipe.innerHTML += bannnerSwipe.innerHTML; //叠多一层好切换
 
 let startPointX = 0, //触摸的开始位置
@@ -147,3 +147,11 @@ $('.header .fri').onclick = () => {
 }
 
 $('.fri_box').onclick = (e) => e.stopPropagation();
+
+
+window.onload = () => {
+    let curr = getData('current_user');
+    if(curr.length == 0){
+        location.href = './login.html';
+    }
+}

@@ -162,11 +162,17 @@ a {
 header {
   width: 100%;
   height: 14.17721519vw;
-  background-color: #95E1F5;
+  background-image: url(../images/顶栏-1.jpg);
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 2.78481013vw;
+}
+header .header_left .header_btn {
+  background-color: transparent;
+  background-image: url(../images/返回.png);
+  background-size: cover;
 }
 header .header_right {
   display: flex;
@@ -175,7 +181,7 @@ header .header_right {
 header .header_btn {
   width: 11.39240506vw;
   height: 11.39240506vw;
-  border: 1px solid #bbb;
+  border: none;
   border-radius: 50%;
   text-align: center;
   line-height: 11.39240506vw;
