@@ -1,4 +1,3 @@
-
 //为数组对象添加自定义方法remove,可通过元素的值查找元素并删除
 Array.prototype.remove = function (val) {
     var index = this.indexOf(val);
@@ -201,6 +200,7 @@ btns[3].onclick = () => {
 function reset() {
     let n = 0;
     for (let x of $('.highlight')) {
+        x.setAttribute('contenteditable',false)
         x.className = 'highlight';
         x.innerHTML = arr2[n];
         n++;
