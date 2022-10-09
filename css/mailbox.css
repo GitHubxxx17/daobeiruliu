@@ -181,7 +181,7 @@ main .personal_share .invitation .triangle {
   border-radius: 100%;
 }
 .side_nav {
-  position: absolute;
+  position: fixed;
   right: 6.32911392vw;
   top: 100vw;
   height: 27.84810127vw;

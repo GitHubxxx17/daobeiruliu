@@ -80,7 +80,7 @@ header {
 }
 
 .popup {
-    // display: none;
+    display: none;
     z-index: 1000;
     position: absolute;
     top: 0;
@@ -162,7 +162,7 @@ header {
             transition: transform 1s ease-in-out, z-index 1s ease-in-out;
             transform-origin: left center;
             border: 1px solid #bbb;
-            // -webkit-user-modify: read-write-plaintext-only;
+            overflow: hidden;
 
             &:nth-child(even) {
                 background-color: rgb(208, 127, 255);

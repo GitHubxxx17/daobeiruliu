@@ -12,9 +12,7 @@ $('.upload input').onchange = function (f) {
         reg = /\n/
         // for(let x of data){
         //     if(reg.test(x))
-        // }
-        TextOverflow($('.text_page'),$('.text_page').innerHTML);
-        
+        // }       
     }
 }
 

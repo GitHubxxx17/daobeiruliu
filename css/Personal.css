@@ -183,12 +183,28 @@ a {
   width: 36.4556962vw;
   height: 36.4556962vw;
   border-radius: 100%;
-  background-image: url(../images/头像男-1.jpg);
+  background-image: url(../images/头像女-1.jpg);
   background-size: cover;
   color: #101010;
   font-size: 3.5443038vw;
   line-height: 36.4556962vw;
-  border: 1px solid #bbbbbb;
+}
+.main .container .head_portrait .head_box {
+  width: 36.4556962vw;
+  height: 36.4556962vw;
+  border-radius: 100%;
+  position: relative;
+}
+.main .container .head_portrait .head_box input {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 11;
 }
 .main .container .show {
   position: absolute;
@@ -380,7 +396,7 @@ a {
   height: 30.88607595vw;
   line-height: 30.88607595vw;
   background-color: #bebebe;
-  background-image: url(../images/功能图标.jpg);
+  background-image: url(../images/功能图标-绿.png);
   background-size: cover;
   font-size: 9.11392405vw;
   text-align: center;

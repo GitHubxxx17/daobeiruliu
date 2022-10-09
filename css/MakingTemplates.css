@@ -129,6 +129,7 @@ header .header_choice {
   padding: 0 2.78481013vw;
 }
 .popup {
+  display: none;
   z-index: 1000;
   position: absolute;
   top: 0;
@@ -204,6 +205,7 @@ header .header_choice {
   transition: transform 1s ease-in-out, z-index 1s ease-in-out;
   transform-origin: left center;
   border: 1px solid #bbb;
+  overflow: hidden;
 }
 .container .total_text .text_page:nth-child(even) {
   background-color: #d07fff;
