@@ -380,7 +380,8 @@ a {
   height: 30.88607595vw;
   line-height: 30.88607595vw;
   background-color: #bebebe;
-  color: #101010;
+  background-image: url(../images/功能图标.jpg);
+  background-size: cover;
   font-size: 9.11392405vw;
   text-align: center;
   border-radius: 100%;
@@ -388,6 +389,7 @@ a {
   overflow: hidden;
 }
 .footer_nav .function a {
+  color: #000;
   display: inline-block;
   width: 30.88607595vw;
   height: 30.88607595vw;

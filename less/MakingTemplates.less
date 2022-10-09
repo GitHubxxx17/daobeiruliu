@@ -79,7 +79,66 @@ header {
     }
 }
 
+.popup {
+    // display: none;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: (798 / @vw);
+    background-color: rgba(0, 0, 0, 0.312);
 
+    .upload_box {
+        position: absolute;
+        top: (254 / @vw);
+        left: (55 / @vw);
+        width: (284 / @vw);
+        height: (232 / @vw);
+        background-color: #fff;
+        border: 1px solid #bbb;
+        border-radius: (54 / @vw) 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .upload {
+            width: (200 / @vw);
+            height: (200 / @vw);
+            border: 2px dashed #666;
+
+            input {
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+    .close {
+        position: absolute;
+        bottom: (240 / @vw);
+        left: 50%;
+        transform: translateX(-50%);
+        width: (40 / @vw);
+        height: (40 / @vw);
+        border: none;
+        border-radius: 50%;
+        background-color: #FFF;
+        text-align: center;
+        line-height: (40 / @vw);
+
+        &::after {
+            font-family: 'icomoon';
+            content: '\e914';
+            font-size: (20/@vw);
+        }
+    }
+}
 
 .container {
     margin-top: (20 /@vw);
@@ -93,18 +152,19 @@ header {
         width: (363 / @vw);
         height: (633 / @vw);
         box-shadow: (3 / @vw) (7 / @vw) (6 / @vw) (1 / @vw) rgba(0, 0, 0, 0.374);
+
         .text_page {
             position: absolute;
             padding: (20 / @vw) (10 / @vw);
             width: (363 / @vw);
             height: (633 / @vw);
             background-color: rgb(112, 150, 255);
-            transition: transform 1s ease-in-out,z-index 1s ease-in-out;
+            transition: transform 1s ease-in-out, z-index 1s ease-in-out;
             transform-origin: left center;
             border: 1px solid #bbb;
             // -webkit-user-modify: read-write-plaintext-only;
 
-            &:nth-child(even){
+            &:nth-child(even) {
                 background-color: rgb(208, 127, 255);
             }
 

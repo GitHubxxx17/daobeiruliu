@@ -36,8 +36,6 @@ $('.fri_box').onclick = (e) => e.stopPropagation();
 
 window.onload = () => {
     let curr = getData('current_user');
-    if(curr){
-        $('.show .name').innerHTML = curr.userInfo.nickName;
-        $('.show .id').innerHTML = `ID号: ${curr.userInfo.userId}`;
-    }
+    $('.show .name').innerHTML = curr.userInfo.nickName;
+    $('.show .id').innerHTML = `ID号: ${curr.userInfo.userId}`;
 }

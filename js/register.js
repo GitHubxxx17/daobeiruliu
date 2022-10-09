@@ -112,7 +112,7 @@ for (let i = 0; i < inputs.length; i++) {
     //当点击input给label添加动画
     inputs[i].onfocus = () => {
         $('label')[i].innerHTML = labelStrArr[i];
-        $('label')[i].style.color = '#fff';
+        $('label')[i].style.color = '#287489';
         $('label')[i].classList.add('label_change');
     }
 }
@@ -124,6 +124,7 @@ $('button').onclick = (e) => {
     let n = 0;
     let reg1 = new RegExp(`${inputs[0].pattern}`);
     let reg2 = new RegExp(`${inputs[1].pattern}`);
+    let reg3 = new RegExp(`${inputs[2].pattern}`);
 
     //判断手机号格式是否正确
     if (reg1.test(inputs[0].value)) {
@@ -143,6 +144,10 @@ $('button').onclick = (e) => {
         n++;
     }
 
+    if(reg3.test(inputs[2].value) && reg3.test(inputs[3].value)) {
+        n++;
+    }
+
     //判断验证码是否正确
     if ($('.captcha input').value.toUpperCase() != code.toUpperCase()) {
         $('.captchaErr').classList.add('show');
@@ -151,7 +156,7 @@ $('button').onclick = (e) => {
         n++;
     }
 
-    if (n == 4) {
+    if (n == 5) {
         let a = [];
         for (let x of $('.register_data')) {
             a.push(x.value);

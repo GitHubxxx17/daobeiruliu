@@ -1,0 +1,151 @@
+//out:../css/
+@import 'base';
+@vw: 3.95vw;
+
+body{
+    background-color: #e8e8e8;
+}
+
+header{
+    width: 100%;
+    height: (56/@vw);
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(187, 187, 187, 1);
+
+    .back{
+        margin: (5/@vw) 0;
+        margin-left: (11/@vw);
+        width: (45/@vw);
+        height: (45/@vw);
+        background-color: rgba(255, 255, 255, 1);
+        text-align: center;
+        border-radius: 100%;
+        border: 1px solid rgba(187, 187, 187, 1);
+    }
+}
+
+main{
+    width: 100%;
+    .other_share{
+        display: flex;
+        margin-top: (30/@vw);
+        margin-left: (10/@vw);
+    
+        .share_content{
+            margin-left: (12/@vw);
+            margin-top: (5/@vw);
+            width: (268/@vw);
+            height: (57/@vw);
+            line-height: (57/@vw);
+            border-radius: (22/@vw);
+            background-color: rgba(255, 255, 255, 1);
+            color: rgba(16, 16, 16, 1);
+            font-size: (14/@vw);
+            text-align: center;
+            border: 1px solid rgba(187, 187, 187, 1);
+        }
+
+        .invitation{
+            position: relative;
+            padding-top: (10/@vw);
+            padding-left: (10/@vw);
+            margin-left: (20/@vw);
+            margin-top: (10/@vw);
+            width: (220/@vw);
+            height: (108/@vw);
+            border-radius: (5/@vw);
+            background-color: rgba(190, 190, 190, 1);
+            color: rgba(16, 16, 16, 1);
+            font-size: (14/@vw);
+            border: 1px solid rgba(187, 187, 187, 1);
+            .triangle{
+                position: absolute;
+                top: (8/@vw);
+                left: (-25/@vw);
+                width: 0;
+                height: 0;
+                line-height: 0;
+                font-size: 0;
+                border: (13 / @vw) solid transparent;
+                border-right-color: rgba(190, 190, 190, 1);
+            }
+        }
+    }
+
+    .personal_share{
+        display: flex;
+        float: right;
+        margin-right: (18/@vw);
+        margin-top: (30/@vw);
+        .share_content{
+            margin-top: (5/@vw);
+            margin-right: (10/@vw);
+            width: (268/@vw);
+            height: (57/@vw);
+            line-height: (57/@vw);
+            border-radius: (22/@vw);
+            background-color: rgba(255, 255, 255, 1);
+            color: rgba(16, 16, 16, 1);
+            font-size: (14/@vw);
+            text-align: center;
+            border: 1px solid rgba(187, 187, 187, 1);
+        }
+
+        .invitation{
+            position: relative;
+            padding-top: (10/@vw);
+            padding-left: (10/@vw);
+            margin-top: (10/@vw);
+            margin-right: (20/@vw);
+            width: (220/@vw);
+            height: (108/@vw);
+            border-radius: (5/@vw);
+            background-color: rgba(190, 190, 190, 1);
+            color: rgba(16, 16, 16, 1);
+            font-size: (14/@vw);
+            border: 1px solid rgba(187, 187, 187, 1);
+            .triangle{
+                position: absolute;
+                top: (8/@vw);
+                right: (-25/@vw);
+                width: 0;
+                height: 0;
+                line-height: 0;
+                font-size: 0;
+                border: (13 / @vw) solid transparent;
+                border-left-color: rgba(190, 190, 190, 1);
+            }
+        }
+    }
+}
+
+
+.head_portrait{
+    width: (64/@vw);
+    height: (64/@vw);
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(187, 187, 187, 1);
+    border-radius: 100%;
+}
+
+.side_nav{
+    position: absolute;
+    right: (25/@vw);
+    top: (395/@vw);
+    height: (110/@vw);
+    width: (45/@vw);
+
+    .common{
+        height: (45/@vw);
+        line-height: (45/@vw);
+        background-color: rgba(255, 255, 255, 1);
+        color: rgba(16, 16, 16, 1);
+        font-size: (14/@vw);
+        text-align: center;
+        border-radius: 100%;
+        border: 1px solid rgba(187, 187, 187, 1);
+    }
+    .file{
+        margin-top: (25/@vw);
+    }
+}

@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rbga(0, 0, 0, 0);
+}
+body {
+  font-family: '微软雅黑';
+}
+img {
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+ol,
+ul {
+  list-style: none;
+}
+input,
+button,
+select,
+textarea {
+  outline: none;
+}
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+/*禁用了文本的拖拉，尤其在谷歌下*/
+textarea {
+  resize: none;
+}
+/*为了使文本段落左右两边对齐*/
+p {
+  text-align: justify;
+  text-justify: distribute;
+}
+/*======== Link ========*/
+a {
+  color: #333;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+/*清空浮动的代码-start*/
+.clr:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.clr {
+  *zoom: 1;
+}
+/*清空浮动的代码-end*/
+/* 页面元素初始化和常用样式定义-end */
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?19tb89');
+  src: url('../fonts/icomoon.eot?19tb89#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?19tb89') format('truetype'), url('../fonts/icomoon.woff?19tb89') format('woff'), url('../fonts/icomoon.svg?19tb89#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+body {
+  background-color: #e8e8e8;
+}
+header {
+  width: 100%;
+  height: 14.17721519vw;
+  background-color: #ffffff;
+  border: 1px solid #bbbbbb;
+}
+header .back {
+  margin: 1.26582278vw 0;
+  margin-left: 2.78481013vw;
+  width: 11.39240506vw;
+  height: 11.39240506vw;
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 100%;
+  border: 1px solid #bbbbbb;
+}
+main {
+  width: 100%;
+}
+main .other_share {
+  display: flex;
+  margin-top: 7.59493671vw;
+  margin-left: 2.53164557vw;
+}
+main .other_share .share_content {
+  margin-left: 3.03797468vw;
+  margin-top: 1.26582278vw;
+  width: 67.84810127vw;
+  height: 14.43037975vw;
+  line-height: 14.43037975vw;
+  border-radius: 5.56962025vw;
+  background-color: #ffffff;
+  color: #101010;
+  font-size: 3.5443038vw;
+  text-align: center;
+  border: 1px solid #bbbbbb;
+}
+main .other_share .invitation {
+  position: relative;
+  padding-top: 2.53164557vw;
+  padding-left: 2.53164557vw;
+  margin-left: 5.06329114vw;
+  margin-top: 2.53164557vw;
+  width: 55.69620253vw;
+  height: 27.34177215vw;
+  border-radius: 1.26582278vw;
+  background-color: #bebebe;
+  color: #101010;
+  font-size: 3.5443038vw;
+  border: 1px solid #bbbbbb;
+}
+main .other_share .invitation .triangle {
+  position: absolute;
+  top: 2.02531646vw;
+  left: -6.32911392vw;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  border: 3.29113924vw solid transparent;
+  border-right-color: #bebebe;
+}
+main .personal_share {
+  display: flex;
+  float: right;
+  margin-right: 4.55696203vw;
+  margin-top: 7.59493671vw;
+}
+main .personal_share .share_content {
+  margin-top: 1.26582278vw;
+  margin-right: 2.53164557vw;
+  width: 67.84810127vw;
+  height: 14.43037975vw;
+  line-height: 14.43037975vw;
+  border-radius: 5.56962025vw;
+  background-color: #ffffff;
+  color: #101010;
+  font-size: 3.5443038vw;
+  text-align: center;
+  border: 1px solid #bbbbbb;
+}
+main .personal_share .invitation {
+  position: relative;
+  padding-top: 2.53164557vw;
+  padding-left: 2.53164557vw;
+  margin-top: 2.53164557vw;
+  margin-right: 5.06329114vw;
+  width: 55.69620253vw;
+  height: 27.34177215vw;
+  border-radius: 1.26582278vw;
+  background-color: #bebebe;
+  color: #101010;
+  font-size: 3.5443038vw;
+  border: 1px solid #bbbbbb;
+}
+main .personal_share .invitation .triangle {
+  position: absolute;
+  top: 2.02531646vw;
+  right: -6.32911392vw;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  border: 3.29113924vw solid transparent;
+  border-left-color: #bebebe;
+}
+.head_portrait {
+  width: 16.20253165vw;
+  height: 16.20253165vw;
+  background-color: #ffffff;
+  border: 1px solid #bbbbbb;
+  border-radius: 100%;
+}
+.side_nav {
+  position: absolute;
+  right: 6.32911392vw;
+  top: 100vw;
+  height: 27.84810127vw;
+  width: 11.39240506vw;
+}
+.side_nav .common {
+  height: 11.39240506vw;
+  line-height: 11.39240506vw;
+  background-color: #ffffff;
+  color: #101010;
+  font-size: 3.5443038vw;
+  text-align: center;
+  border-radius: 100%;
+  border: 1px solid #bbbbbb;
+}
+.side_nav .file {
+  margin-top: 6.32911392vw;
+}

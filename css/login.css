@@ -65,7 +65,7 @@ a {
   font-display: block;
 }
 body {
-  background-image: url(../images/登录-2.jpg);
+  background-image: url(../images/登录-1.jpg);
   background-size: cover;
 }
 .login_box {
@@ -73,15 +73,15 @@ body {
   margin: 21.01265823vw auto;
   width: 77.46835443vw;
   height: 126.58227848vw;
-  background: linear-gradient(to bottom, #a7bfe8, #6190e8);
+  background-color: rgba(255, 255, 255, 0.522);
   border-radius: 1.26582278vw;
   padding-top: 7.08860759vw;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 .login_box .logo {
-  width: 40.50632911vw;
+  width: 58.2278481vw;
   height: 10.88607595vw;
-  background-image: url(../images/logo.png);
+  background-image: url(../images/登录图标-2.jpg);
   background-size: cover;
   margin: 0 auto 11.39240506vw;
 }

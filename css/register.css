@@ -65,22 +65,22 @@ a {
   font-display: block;
 }
 body {
-  background-image: url(../images/登录-1.jpg);
+  background-image: url(../images/登录-2.jpg);
   background-size: cover;
 }
 .container {
   margin: 21.01265823vw auto;
   width: 76.96202532vw;
   height: 145.3164557vw;
-  background: linear-gradient(to bottom, #a7bfe8, #6190e8);
+  background-color: rgba(255, 255, 255, 0.522);
   border-radius: 1.26582278vw;
   padding-top: 7.08860759vw;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1.26582278vw 2.53164557vw rgba(0, 0, 0, 0.1);
 }
 .container .logo {
-  width: 40.50632911vw;
+  width: 58.2278481vw;
   height: 10.88607595vw;
-  background-image: url(../images/logo.png);
+  background-image: url(../images/登录图标-2.jpg);
   background-size: cover;
   margin: 0 auto 11.39240506vw;
 }
@@ -148,7 +148,7 @@ body {
 .container form .form_control {
   position: relative;
   font-size: 4.05063291vw;
-  color: #fff;
+  color: #287489;
 }
 .container form .form_control label {
   position: absolute;
@@ -169,11 +169,11 @@ body {
   margin: 1.51898734vw 0;
   font-size: 4.05063291vw;
   border: none;
-  color: #fff;
+  color: #287489;
   border-bottom: 0.50632911vw solid #000;
 }
 .container form input:focus {
-  border-bottom: 0.50632911vw solid #97ffde;
+  border-bottom: 0.50632911vw solid #287489;
 }
 .container form .captcha {
   position: relative;
@@ -182,7 +182,7 @@ body {
   margin: 5.06329114vw 0 1.51898734vw;
   display: flex;
   justify-content: space-between;
-  color: #fff;
+  color: #287489;
 }
 .container form .captcha label {
   top: 4.05063291vw;
@@ -226,7 +226,7 @@ body {
   border: 0;
   overflow: hidden;
   background-color: transparent;
-  color: #fff;
+  color: #287489;
 }
 .container form button span {
   position: absolute;

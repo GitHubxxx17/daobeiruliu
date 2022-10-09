@@ -128,6 +128,60 @@ header .header_choice {
   align-items: center;
   padding: 0 2.78481013vw;
 }
+.popup {
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 202.02531646vw;
+  background-color: rgba(0, 0, 0, 0.312);
+}
+.popup .upload_box {
+  position: absolute;
+  top: 64.30379747vw;
+  left: 13.92405063vw;
+  width: 71.89873418vw;
+  height: 58.73417722vw;
+  background-color: #fff;
+  border: 1px solid #bbb;
+  border-radius: 13.67088608vw 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popup .upload_box .upload {
+  width: 50.63291139vw;
+  height: 50.63291139vw;
+  border: 2px dashed #666;
+}
+.popup .upload_box .upload input {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.popup .close {
+  position: absolute;
+  bottom: 60.75949367vw;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10.12658228vw;
+  height: 10.12658228vw;
+  border: none;
+  border-radius: 50%;
+  background-color: #FFF;
+  text-align: center;
+  line-height: 10.12658228vw;
+}
+.popup .close::after {
+  font-family: 'icomoon';
+  content: '\e914';
+  font-size: 5.06329114vw;
+}
 .container {
   margin-top: 5.06329114vw;
   width: 100%;

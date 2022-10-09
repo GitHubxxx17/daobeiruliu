@@ -151,6 +151,7 @@ $('.fri_box').onclick = (e) => e.stopPropagation();
 
 window.onload = () => {
     let curr = getData('current_user');
+    console.log(curr);
     if(curr.length == 0){
         location.href = './login.html';
     }

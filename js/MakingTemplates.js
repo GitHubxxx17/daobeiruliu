@@ -1,4 +1,26 @@
-// import { $, ajax } from './base.js'
+//上传文件
+$('.upload input').onchange = function (f) {
+    let file = f.target.files[0];
+    console.log(file);
+    // 读取文件内容并渲染到页面上
+    let reader = new FileReader()
+    reader.readAsText(file,'UTF-8');
+    reader.onload = function(e){
+        let data = this.result;
+        console.log(data);
+        $('.text_page').innerHTML = data;
+        reg = /\n/
+        // for(let x of data){
+        //     if(reg.test(x))
+        // }
+        TextOverflow($('.text_page'),$('.text_page').innerHTML);
+        
+    }
+}
+
+$('.close').onclick = () => {
+    $('.popup').style.display = 'none';
+}
 
 //为数组对象添加自定义方法remove,可通过元素的值查找元素并删除
 Array.prototype.remove = function (val) {
@@ -167,8 +189,8 @@ function CancelHollowing(e, n) {
     }
 }
 
-let textPage = $('.text_page');
-TextOverflow(textPage, textPage.innerHTML);
+
+
 function TextOverflow(box, str) {
     // 如果盒子的内容溢出
     if (box.offsetHeight < box.scrollHeight) {
@@ -232,6 +254,7 @@ $('.pageUp').onclick = () => {
         numberOfPages.innerHTML = `${pageNow + 1}/${pages}`
     }
 }
+
 
 
 
