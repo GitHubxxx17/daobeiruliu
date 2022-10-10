@@ -46,6 +46,20 @@ let timer = setInterval(() => {
 
 }, 3000)
 
+bannner_swipe.addEventListener('transitionend', (e) => {
+    imageLen = itemImg.length;
+    if (cn === 0) {
+        cn = imageLen / 2;
+        bannnerSwipe.style.transition = 'none';
+        let translatex = -itemImg[0].clientWidth * cn;
+        bannnerSwipe.style.transform = `translateX(${translatex}px)`;
+    } else if (cn === imageLen - 1) {
+        cn = imageLen / 2 - 1;
+        bannnerSwipe.style.transition = 'none';
+        let translatex = -itemImg[0].clientWidth * cn;
+        bannnerSwipe.style.transform = `translateX(${translatex}px)`;
+    }
+})
 
 //手指触摸开始
 bannnerSwipe.addEventListener('touchstart', function(e) {
@@ -134,8 +148,8 @@ bannnerSwipe.addEventListener('touchend', function(e) {
 $('.fri_slidebox').onclick = () => {
     $('.fri_box').classList.add('slidein');
     $('.fri_box').classList.remove('slideout');
-    $('.fri_box').addEventListener('animationend',() => {
-        if($('.fri_box').classList.contains('slidein'))
+    $('.fri_box').addEventListener('animationend', () => {
+        if ($('.fri_box').classList.contains('slidein'))
             $('.fri_slidebox').style.display = 'none';
     })
 }
@@ -152,7 +166,7 @@ $('.fri_box').onclick = (e) => e.stopPropagation();
 window.onload = () => {
     let curr = getData('current_user');
     console.log(curr);
-    if(curr.length == 0){
+    if (curr.length == 0) {
         location.href = './login.html';
     }
 }

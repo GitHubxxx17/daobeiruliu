@@ -65,7 +65,9 @@ a {
   font-display: block;
 }
 header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 14.17721519vw;
   background-image: url(../images/顶栏-1.jpg);
@@ -177,13 +179,30 @@ header .header_choice {
   box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #BABECC;
 }
 .container {
-  margin-top: 5.06329114vw;
+  margin-top: 16.70886076vw;
   width: 100%;
+}
+.container .title {
+  margin: 0 auto;
+  width: 91.89873418vw;
+  height: 10.12658228vw;
+  line-height: 10.12658228vw;
+  background-color: #9ddaff;
+  box-shadow: 0.75949367vw 1.7721519vw 1.51898734vw 0.25316456vw rgba(0, 0, 0, 0.374);
+  display: flex;
+  justify-content: start;
+  font-size: 5.06329114vw;
+}
+.container .title .templates_name {
+  font-size: 5.06329114vw;
+  background-color: transparent;
+  outline: none;
+  border: none;
 }
 .container .total_text {
   position: relative;
   font-size: 5.06329114vw;
-  margin: 0 auto;
+  margin: 2.53164557vw auto;
   width: 91.89873418vw;
   height: 160.25316456vw;
   box-shadow: 0.75949367vw 1.7721519vw 1.51898734vw 0.25316456vw rgba(0, 0, 0, 0.374);
