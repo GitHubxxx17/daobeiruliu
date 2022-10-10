@@ -115,40 +115,40 @@ header .header_left .header_btn a {
   font-size: 3.5443038vw;
 }
 .container .upload {
-  width: 42.78481013vw;
-  height: 40.75949367vw;
-  top: 20.25316456vw;
-  left: 17.46835443vw;
-  transform: rotate(30deg);
+  width: 44.30379747vw;
+  height: 33.41772152vw;
+  top: 21.7721519vw;
+  left: 19.49367089vw;
+  transform: rotate(322deg);
 }
 .container .upload span {
-  top: 10.12658228vw;
-  left: 10.12658228vw;
-  transform: rotate(-30deg);
+  top: 6.32911392vw;
+  left: 5.06329114vw;
+  transform: rotate(-322deg);
 }
 .container .copy {
-  width: 25.3164557vw;
-  height: 25.3164557vw;
-  top: 66.83544304vw;
-  left: 18.98734177vw;
-  transform: rotate(282deg);
+  width: 28.86075949vw;
+  height: 33.16455696vw;
+  top: 58.48101266vw;
+  left: 59.24050633vw;
+  transform: rotate(164deg);
 }
 .container .copy span {
-  top: 5.06329114vw;
-  left: 5.06329114vw;
-  transform: rotate(-282deg);
+  top: 6.32911392vw;
+  left: 2.53164557vw;
+  transform: rotate(-164deg);
 }
 .container .modify {
-  width: 37.46835443vw;
-  height: 36.4556962vw;
-  top: 85.06329114vw;
-  left: 47.84810127vw;
-  transform: rotate(159deg);
+  width: 29.11392405vw;
+  height: 34.93670886vw;
+  top: 103.03797468vw;
+  left: 27.08860759vw;
+  transform: rotate(310deg);
 }
 .container .modify span {
-  top: 8.10126582vw;
-  left: 5.06329114vw;
-  transform: rotate(-159deg);
+  top: 5.56962025vw;
+  left: 3.03797468vw;
+  transform: rotate(-310deg);
 }
 .popup {
   display: none;
