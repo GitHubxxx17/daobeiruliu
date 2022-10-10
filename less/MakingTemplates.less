@@ -41,7 +41,9 @@ header {
             }
         }
 
-
+        .choice {
+            background-color: rgb(167, 255, 242);
+        }
 
         .hollow {
             background-color: rgb(138, 230, 255) !important;
@@ -67,7 +69,8 @@ header {
         z-index: 100;
         width: 100%;
         height: (56 / @vw);
-        background-color: #fff;
+        background-image: url(../images/顶栏-1.jpg);
+        background-size: cover;
         position: fixed;
         top: 0;
         left: 0;
@@ -89,7 +92,9 @@ header {
     height: (798 / @vw);
     background-color: rgba(0, 0, 0, 0.312);
 
-    .upload_box {
+
+
+    .cancel {
         position: absolute;
         top: (254 / @vw);
         left: (55 / @vw);
@@ -98,45 +103,35 @@ header {
         background-color: #fff;
         border: 1px solid #bbb;
         border-radius: (54 / @vw) 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        padding: (40 / @vw) (20 / @vw);
 
-        .upload {
-            width: (200 / @vw);
-            height: (200 / @vw);
-            border: 2px dashed #666;
 
-            input {
-                width: 100%;
-                height: 100%;
-                opacity: 0;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+        p {
+            font-size: (25 / @vw);
+            margin-bottom: (40 / @vw);
+        }
+
+        .cancel_btn {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            button {
+                font-size: (20 / @vw);
+                width: (100 / @vw);
+                height: (50 / @vw);
+                outline: none;
+                border: none;
+                background-color: #fff;
+                box-shadow: -5px -5px 20px #FFF, 5px 5px 20px #BABECC;
+                transition: all 0.1s ease-in-out;
+                &:active {
+                    box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #BABECC;
+                }
             }
         }
-    }
 
-    .close {
-        position: absolute;
-        bottom: (240 / @vw);
-        left: 50%;
-        transform: translateX(-50%);
-        width: (40 / @vw);
-        height: (40 / @vw);
-        border: none;
-        border-radius: 50%;
-        background-color: #FFF;
-        text-align: center;
-        line-height: (40 / @vw);
-
-        &::after {
-            font-family: 'icomoon';
-            content: '\e914';
-            font-size: (20/@vw);
-        }
     }
 }
 
@@ -147,7 +142,6 @@ header {
     .total_text {
         position: relative;
         font-size: (20 / @vw);
-        border: 1px solid #bbb;
         margin: 0 auto;
         width: (363 / @vw);
         height: (633 / @vw);
@@ -161,7 +155,8 @@ header {
             background-color: rgb(112, 150, 255);
             transition: transform 1s ease-in-out, z-index 1s ease-in-out;
             transform-origin: left center;
-            border: 1px solid #bbb;
+            border: none;
+            outline: none;
             overflow: hidden;
 
             &:nth-child(even) {

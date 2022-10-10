@@ -78,7 +78,7 @@ Array.prototype.remove = function (val) {
 //                 }
 //             }
 //         }
-        
+
 //         pageNow++;
 //         for (let x of $('.input')) {
 //             x.onclick = (e) => answer(x, e);
@@ -111,7 +111,6 @@ for (let x of $('.highlight')) {
     arr1.push(x);
     arr2.push(x.innerText);
 }
-
 let btns = $('.header_btn');
 flag = true;
 flag1 = true;
@@ -124,7 +123,8 @@ btns[1].onclick = () => {
         reset();
         //利用循环将选中的节点内容替换
         for (let x of $('.highlight')) {
-            x.setAttribute('contenteditable',true)
+            x.setAttribute('contenteditable', true)
+            x.setAttribute('tabindex','-1')
             x.innerHTML = '请输入答案';
             // 点击可输入答案
             x.onclick = (e) => {
@@ -156,7 +156,6 @@ document.onclick = () => {
             x.innerHTML = '请输入答案';
     }
 }
-
 //点击进入背诵模式
 btns[2].onclick = () => {
     if (flag1) {
@@ -200,7 +199,7 @@ btns[3].onclick = () => {
 function reset() {
     let n = 0;
     for (let x of $('.highlight')) {
-        x.setAttribute('contenteditable',false)
+        x.setAttribute('contenteditable', false)
         x.className = 'highlight';
         x.innerHTML = arr2[n];
         n++;

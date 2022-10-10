@@ -13,15 +13,15 @@
     <header>
         <div class="header_left">
             <button class="header_btn">
-                <a href="./function.html"></a>
+                <a href="javascript:history.back(-1)"></a>
             </button>
         </div>
         <div class="header_right">
-            <button class="header_btn hidden">选择</button>
-            <button class="header_btn hidden">挖空</button>
+            <button class="header_btn">选择</button>
+            <button class="header_btn">挖空</button>
             <button class="header_btn">编辑</button>
-            <button class="header_btn hidden">保存</button>
-            <button class="header_btn hidden">取消</button>
+            <button class="header_btn">保存</button>
+            <button class="header_btn">取消</button>
         </div>
         <div class="header_choice hidden">
             <button class="header_btn">返回</button>
@@ -29,16 +29,19 @@
         </div>
     </header>
     <div class="popup">
-        <div class="upload_box">
-            <div class="upload">
-                <input type="file" accept="application/vnd.openxmlformats-officedocument.wordprocessingml.document">
-            </div> 
+        
+        <div class="cancel">
+            <p>该操作将清除所有挖空部分，请谨慎选择</p>
+            <div class="cancel_btn">
+                <button>确认</button>
+            <button>保留</button>
+            </div>
+            
         </div>
-        <div class="close"></div>
     </div>
     <div class="container">
         <div class="total_text">
-            <div class="text_page" contenteditable="true"></div>
+            <div class="text_page" contenteditable="false"></div>
         </div>
 
         <!-- <div class="turn_pages">

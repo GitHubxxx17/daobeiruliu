@@ -98,6 +98,9 @@ header .header_right .header_btn {
 header .header_right .header_btn:last-child {
   margin-right: 0;
 }
+header .header_right .choice {
+  background-color: #a7fff2;
+}
 header .header_right .hollow {
   background-color: #8ae6ff !important;
 }
@@ -118,7 +121,8 @@ header .header_choice {
   z-index: 100;
   width: 100%;
   height: 14.17721519vw;
-  background-color: #fff;
+  background-image: url(../images/顶栏-1.jpg);
+  background-size: cover;
   position: fixed;
   top: 0;
   left: 0;
@@ -138,7 +142,7 @@ header .header_choice {
   height: 202.02531646vw;
   background-color: rgba(0, 0, 0, 0.312);
 }
-.popup .upload_box {
+.popup .cancel {
   position: absolute;
   top: 64.30379747vw;
   left: 13.92405063vw;
@@ -147,41 +151,30 @@ header .header_choice {
   background-color: #fff;
   border: 1px solid #bbb;
   border-radius: 13.67088608vw 0;
+  padding: 10.12658228vw 5.06329114vw;
+}
+.popup .cancel p {
+  font-size: 6.32911392vw;
+  margin-bottom: 10.12658228vw;
+}
+.popup .cancel .cancel_btn {
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
-.popup .upload_box .upload {
-  width: 50.63291139vw;
-  height: 50.63291139vw;
-  border: 2px dashed #666;
-}
-.popup .upload_box .upload input {
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.popup .close {
-  position: absolute;
-  bottom: 60.75949367vw;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 10.12658228vw;
-  height: 10.12658228vw;
-  border: none;
-  border-radius: 50%;
-  background-color: #FFF;
-  text-align: center;
-  line-height: 10.12658228vw;
-}
-.popup .close::after {
-  font-family: 'icomoon';
-  content: '\e914';
+.popup .cancel .cancel_btn button {
   font-size: 5.06329114vw;
+  width: 25.3164557vw;
+  height: 12.65822785vw;
+  outline: none;
+  border: none;
+  background-color: #fff;
+  box-shadow: -5px -5px 20px #FFF, 5px 5px 20px #BABECC;
+  transition: all 0.1s ease-in-out;
+}
+.popup .cancel .cancel_btn button:active {
+  box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #BABECC;
 }
 .container {
   margin-top: 5.06329114vw;
@@ -190,7 +183,6 @@ header .header_choice {
 .container .total_text {
   position: relative;
   font-size: 5.06329114vw;
-  border: 1px solid #bbb;
   margin: 0 auto;
   width: 91.89873418vw;
   height: 160.25316456vw;
@@ -204,7 +196,8 @@ header .header_choice {
   background-color: #7096ff;
   transition: transform 1s ease-in-out, z-index 1s ease-in-out;
   transform-origin: left center;
-  border: 1px solid #bbb;
+  border: none;
+  outline: none;
   overflow: hidden;
 }
 .container .total_text .text_page:nth-child(even) {
