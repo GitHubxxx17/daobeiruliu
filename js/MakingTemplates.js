@@ -59,7 +59,7 @@ btns[2].onclick = () => {
     flag3 = true;
     btns[2].classList.toggle('hollow');
     //当长按屏幕触屏结束时，选中文本 
-    $('.text_page').onmouseup = (e) => {
+    $('.text_page').ontouchend = (e) => {
         //判断当前是否为挖空模式
         if (btns[2].classList.contains('hollow')) {
             flag = true;
