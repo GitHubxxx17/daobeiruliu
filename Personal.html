@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>个人</title>
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
     <link rel="stylesheet" href="./css/Personal.css">
 </head>
 <!--修改-->
@@ -27,14 +28,14 @@
                 <div class="setting">
                     <a href="./setUp.html"></a>
                 </div>
-                <div class="fri">好友</div>
+                <div class="fri"></div>
             </div>
         </div>
 
         <div class="daily">
             <div class="clock">打卡</div>
             <div class="right">
-                <div class="points">积分情况</div>
+                <div class="points"></div>
                 <div class="blank">
                     <a href="./callup.html">召集</a>
                 </div>
@@ -100,17 +101,29 @@
             </div>
         </div>
     </div>
-    <div class="footer_nav">
-        <div class="common home">
-            <a href="./index.html">首页</a>
-        </div>
-        <div class="function">
-            <a href="./function.html"></a>
-        </div>
-        <div class="common Person">
-            <a href="./Personal.html">个人</a>
-        </div>
-    </div>
+    <footer>
+        <ul class="footer_nav">
+            <span class="nav_indicator"></span>
+            <li>
+                <a href="./index.html">
+                    <i class="iconfont icon-biaoqiankuozhan_shouye-251"></i>
+                    <span class="title">首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="./function.html">
+                    <i class="iconfont icon-biaoqiankuozhan_dongtai-254"></i>
+                    <span class="title">功能</span>
+                </a>
+            </li>
+            <li>
+                <a href="./Personal.html" class="nav_item_active">
+                    <i class="iconfont icon-biaoqianA01_wode-265"></i>
+                    <span class="title">个人</span>
+                </a>
+            </li>
+        </ul>
+    </footer>
 </body>
 <script src="./js/base.js"></script>
 <script src="./js/Personal.js"></script>

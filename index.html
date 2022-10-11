@@ -4,22 +4,145 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>首页 </title>
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
-    <div class="header">
-        <div class="search">
-            <input type="text">
-            <button type="submit" class="searchicon"></button>
+    <div class="big_box">
+        <div class="scroll_box">
+            <div class="function_page">
+                <header>
+                    <div class="header_left">
+                        <img src="./images/logo.png">
+                    </div>
+                    <div class="header_right">
+                        <button class="header_btn">
+                            <a href="./callup.html">召集</a>
+                        </button>
+                        <button class="header_btn fri">
+                            <a href="#">好友</a>
+                        </button>
+                    </div>
+                </header>
+                <div class="container">
+                    <div class="triangle edit">
+                        <a href="./MTinital.html"><span>编辑</span></a>
+                    </div>
+
+                    <div class="triangle learning_model">
+                        <a href="./learningModel.html"><span>学习模式</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="index_page">
+                <div class="header">
+                    <div class="search">
+                        <input type="text">
+                        <button type="submit" class="searchicon"></button>
+                    </div>
+                    <div class="common callup_icon">
+                        <a href="./callup.html">召集</a>
+                    </div>
+                    <div class="common fri">好友</div>
+                </div>
+                <div class="banner_body" id="banner_body">
+                    <ul class="bannner_swipe" id="bannner_swipe">
+                        <li class="banner_swipe_item">
+                            <img src="./images/赛季海报.jpg" alt="" class="itemImg">
+                        </li>
+                        <li class="banner_swipe_item">
+                            <img src="./images/lbt.jpg" alt="" class="itemImg">
+                        </li>
+                        <li class="banner_swipe_item">
+                            <img src="./images/lbt-2.jpg" alt="" class="itemImg">
+                        </li>
+                        <li class="banner_swipe_item">
+                            <img src="./images/7.jpg" alt="" class="itemImg">
+                        </li>
+                        <li class="banner_swipe_item">
+                            <img src="./images/8.jpg" alt="" class="itemImg">
+                        </li>
+                    </ul>
+                    <div class="spots">
+                        <span class="active"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="mould_show">
+                    <div class="title">
+                        <div class="recommend">模板推荐</div>
+                        <div class="more">
+                            <a href="#">>>查看更多</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="enter"></div>
+                    </div>
+                    <div class="box">
+                        <div class="enter"></div>
+                    </div>
+                    <div class="box">
+                        <div class="enter"></div>
+                    </div>
+                    <div class="box">
+                        <div class="enter"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="personal_page">
+                <div class="main">
+                    <div class="container">
+                        <div class="head_portrait">
+                            <div class="head_box">
+                                <!-- 上传的按钮 -->
+                                <input type="file" id="file" accept=".jpg">
+                            </div>
+                        </div>
+                        <div class="show">
+                            <div class="name">用户名称</div>
+                            <div class="id">ID号</div>
+                        </div>
+                        <div class="setting_fri">
+                            <div class="setting">
+                                <a href="./setUp.html"></a>
+                            </div>
+                            <div class="fri"></div>
+                        </div>
+                    </div>
+
+                    <div class="daily">
+                        <div class="clock">打卡</div>
+                        <div class="right">
+                            <div class="points"></div>
+                            <div class="blank">
+                                <a href="./callup.html">召集</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p_m">
+                        <div class="tab">
+                            <span class="tab_memory active"><a href="javascript:void(0)">记忆库</a></span>
+                            <span class="tab_plans"><a href="javascript:void(0)">计划表</a></span>
+                        </div>
+                        <div class=" common memory">记忆库</div>
+                        <div class=" common plans">计划表</div>
+                    </div>
+
+                </div>
+            </div>
         </div>
-        <div class="common callup_icon">
-            <a href="./callup.html">召集</a>
-        </div>
-        <div class="common fri">好友</div>
+
     </div>
+
+
     <div class="fri_slidebox">
         <div class="fri_box">
             <div class="System_notification">
@@ -70,65 +193,35 @@
             </div>
         </div>
     </div>
-    <div class="banner_body" id="banner_body">
-        <ul class="bannner_swipe" id="bannner_swipe">
-            <li class="banner_swipe_item">
-                <img src="./images/赛季海报.jpg" alt="" class="itemImg">
+
+
+    <footer>
+        <ul class="footer_nav">
+            <span class="nav_indicator"></span>
+            <li>
+                <a href="javascript:;" class="nav_item_active">
+                    <i class="iconfont icon-biaoqiankuozhan_shouye-251"></i>
+                    <span class="title">首页</span>
+                </a>
             </li>
-            <li class="banner_swipe_item">
-                <img src="./images/lbt.jpg" alt="" class="itemImg">
+            <li>
+                <a href="javascript:;">
+                    <i class="iconfont icon-biaoqiankuozhan_dongtai-254"></i>
+                    <span class="title">功能</span>
+                </a>
             </li>
-            <li class="banner_swipe_item">
-                <img src="./images/lbt-2.jpg" alt="" class="itemImg">
-            </li>
-            <li class="banner_swipe_item">
-                <img src="./images/7.jpg" alt="" class="itemImg">
-            </li>
-            <li class="banner_swipe_item">
-                <img src="./images/8.jpg" alt="" class="itemImg">
+            <li>
+                <a href="javascript:;">
+                    <i class="iconfont icon-biaoqianA01_wode-265"></i>
+                    <span class="title">个人</span>
+                </a>
             </li>
         </ul>
-        <div class="spots">
-            <span class="active"></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </div>
-    <div class="mould_show">
-        <div class="title">
-            <div class="recommend">模板推荐</div>
-            <div class="more">
-                <a href="#">>>查看更多</a>
-            </div>
-        </div>
-        <div class="box">
-            <div class="enter"></div>
-        </div>
-        <div class="box">
-            <div class="enter"></div>
-        </div>
-        <div class="box">
-            <div class="enter"></div>
-        </div>
-        <div class="box">
-            <div class="enter"></div>
-        </div>
-    </div>
-    <div class="footer_nav">
-        <div class="common home">
-            <a href="./index.html">首页</a>
-        </div>
-        <div class="function">
-            <a href="./function.html"></a>
-        </div>
-        <div class="common Person">
-            <a href="./Personal.html">个人</a>
-        </div>
-    </div>
+    </footer>
 </body>
 <script src="./js/base.js"></script>
 <script src="./js/index.js"></script>
+
+<!-- <script src="./js/Personal.js"></script> -->
 
 </html>

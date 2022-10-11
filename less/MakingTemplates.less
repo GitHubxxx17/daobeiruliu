@@ -38,6 +38,11 @@ header {
         .header_btn {
             margin-right: (5 / @vw);
 
+            &:nth-child(3) {
+                background-image: url(../images/编辑.png);
+                background-size: cover;
+            }
+
             &:last-child {
                 margin-right: 0;
             }
@@ -143,15 +148,17 @@ header {
 
     .title {
         margin: 0 auto;
+        padding: 0 (5 / @vw);
         width: (363 / @vw);
         height: (40 / @vw);
         line-height: (40 / @vw);
-        background-color: #9ddaff;
+        background-image: url(../images/模板背景-2.jpg);
         box-shadow: (3 / @vw) (7 / @vw) (6 / @vw) (1 / @vw) rgba(0, 0, 0, 0.374);
         display: flex;
         justify-content: start;
         font-size: (20 / @vw);
         .templates_name {
+            width: 100%;
             font-size: (20 / @vw);
             background-color: transparent;
             outline: none;
@@ -172,16 +179,13 @@ header {
             padding: (20 / @vw) (10 / @vw);
             width: (363 / @vw);
             height: (633 / @vw);
-            background-color: rgb(112, 150, 255);
+            background-image: url(../images/模板背景-2.jpg);
+            background-size: cover;
             transition: transform 1s ease-in-out, z-index 1s ease-in-out;
             transform-origin: left center;
             border: none;
             outline: none;
             overflow: hidden;
-
-            &:nth-child(even) {
-                background-color: rgb(208, 127, 255);
-            }
 
             .highlight {
                 display: inline;

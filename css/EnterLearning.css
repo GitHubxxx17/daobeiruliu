@@ -22,6 +22,7 @@ button,
 select,
 textarea {
   outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .ellipsis {
   overflow: hidden;
@@ -137,15 +138,12 @@ header .btn_current {
   padding: 5.06329114vw 2.53164557vw;
   width: 91.89873418vw;
   height: 157.72151899vw;
-  background-color: #7096ff;
+  background-image: url(../images/模板背景-2.jpg);
+  background-size: cover;
   transition: transform 2s ease-in-out, z-index 2s ease-in-out;
   transform-origin: left center;
-  border: 1px solid #bbb;
   line-height: 7.59493671vw;
   overflow: scroll;
-}
-.container .total_text .text_page:nth-child(even) {
-  background-color: #d07fff;
 }
 .container .total_text .text_page .highlight {
   display: inline;
@@ -188,4 +186,39 @@ header .btn_current {
   width: 15.94936709vw;
   height: 100%;
   border: 1px solid #bbb;
+}
+.popup {
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 202.02531646vw;
+  background-color: rgba(0, 0, 0, 0.312);
+}
+.popup .memorybank {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 89.62025316vw;
+  height: 126.58227848vw;
+  background-color: #fff;
+  border: 1px solid #bbb;
+  border-radius: 5.06329114vw;
+  padding: 10.12658228vw 5.06329114vw;
+}
+.popup .memorybank .bank {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+  overflow: hidden;
+}
+.popup .memorybank .bank ul {
+  width: 100%;
+}
+.popup .memorybank .bank ul li {
+  width: 100%;
+  height: 15.18987342vw;
+  border: 1px solid #a9c5ca;
 }

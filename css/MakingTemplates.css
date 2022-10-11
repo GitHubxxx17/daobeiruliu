@@ -22,6 +22,7 @@ button,
 select,
 textarea {
   outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .ellipsis {
   overflow: hidden;
@@ -96,6 +97,10 @@ header .header_right {
 }
 header .header_right .header_btn {
   margin-right: 1.26582278vw;
+}
+header .header_right .header_btn:nth-child(3) {
+  background-image: url(../images/编辑.png);
+  background-size: cover;
 }
 header .header_right .header_btn:last-child {
   margin-right: 0;
@@ -184,16 +189,18 @@ header .header_choice {
 }
 .container .title {
   margin: 0 auto;
+  padding: 0 1.26582278vw;
   width: 91.89873418vw;
   height: 10.12658228vw;
   line-height: 10.12658228vw;
-  background-color: #9ddaff;
+  background-image: url(../images/模板背景-2.jpg);
   box-shadow: 0.75949367vw 1.7721519vw 1.51898734vw 0.25316456vw rgba(0, 0, 0, 0.374);
   display: flex;
   justify-content: start;
   font-size: 5.06329114vw;
 }
 .container .title .templates_name {
+  width: 100%;
   font-size: 5.06329114vw;
   background-color: transparent;
   outline: none;
@@ -212,15 +219,13 @@ header .header_choice {
   padding: 5.06329114vw 2.53164557vw;
   width: 91.89873418vw;
   height: 160.25316456vw;
-  background-color: #7096ff;
+  background-image: url(../images/模板背景-2.jpg);
+  background-size: cover;
   transition: transform 1s ease-in-out, z-index 1s ease-in-out;
   transform-origin: left center;
   border: none;
   outline: none;
   overflow: hidden;
-}
-.container .total_text .text_page:nth-child(even) {
-  background-color: #d07fff;
 }
 .container .total_text .text_page .highlight {
   display: inline;

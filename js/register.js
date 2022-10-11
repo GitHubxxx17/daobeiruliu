@@ -93,7 +93,7 @@ for (let i = 0; i < inputs.length; i++) {
                         $('label')[i].innerHTML = newstr.content;
                         $('label')[i].style.color = 'red';
                     }
-                })
+                },true)
             }else if(inputs[i].value != ''){
                 if(i == 0)
                     $('label')[i].innerHTML = '手机号格式错误';
@@ -172,13 +172,13 @@ $('button').onclick = (e) => {
                     let userInfo = newstr.data.user;
                     curr['userInfo'] = userInfo;
                     saveData('current_user', curr);
-                })
+                },true)
 
                 location.href = './index.html';
             } else {
                 alert('注册失败，请重新注册');
             }
-        })
+        },true)
     }
 }
 

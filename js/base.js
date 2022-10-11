@@ -7,7 +7,7 @@ function $(selectors) {
 }
 
 //封装一个发送ajax请求和处理数据的的函数
-function ajax(url, method, req, funC) {
+function ajax(url, method, req, funC,flag) {
     //1.创建Ajax对象
     var xhr = null;
     if (window.XMLHttpRequest) {
@@ -18,7 +18,8 @@ function ajax(url, method, req, funC) {
     //2.连接服务器
     xhr.open(method, url);
     //3.设置请求头
-    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    if(flag)
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     //4.发送请求
     xhr.send(req);
     //5.接收服务器的返回

@@ -1,3 +1,4 @@
+//out:../css/
 @import 'base';
 @import 'fri_slidebox';
 @vw: 3.95vw;
@@ -45,7 +46,6 @@ header {
 
 }
 
-
 .container {
     position: relative;
     height: (662 / @vw);
@@ -70,24 +70,10 @@ header {
         }
     }
 
-    .upload {
-        width: (169 / @vw);
-        height: (161 / @vw);
-        top: (80 / @vw);
-        left: (69 / @vw);
-        transform: rotate(30deg);
-
-        span {           
-            top: (40 / @vw);
-            left: (40 / @vw);
-            transform: rotate(-30deg);
-        }
-    }
-
     .edit {
         width: (100 / @vw);
         height: (100 / @vw);
-        top: (264 / @vw);
+        top: (255 / @vw);
         left: (75 / @vw);
         transform: rotate(282deg);
 
@@ -101,7 +87,7 @@ header {
     .learning_model {
         width: (148 / @vw);
         height: (144 / @vw);
-        top: (336 / @vw);
+        top: (314 / @vw);
         left: (189 / @vw);
         transform: rotate(159deg);
 
@@ -154,62 +140,77 @@ header {
     }
 }
 
-.footer_nav{
+footer {
     position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     left: 0px;
     bottom: 0px;
     width: (395/@vw);
     height: (80/@vw);
-    padding: 0 (25/@vw);
     background-color: rgba(255, 255, 255, 1);
     text-align: center;
-    border: 1px solid rgba(187, 187, 187, 1);
 
-    .common{
-        margin-bottom: (20/@vw);
-        width: (84/@vw);
-        height: (84/@vw);
-        background-color: rgba(255, 255, 255, 1);
-        color: rgba(16, 16, 16, 1);
-        font-size: (14 / @vw);
-        line-height:(84/@vw) ;
-        text-align: center;
-        border-radius: 100%;
-        border: 1px solid rgba(187, 187, 187, 1);
-        overflow: hidden;
+    .footer_nav{
+        position: relative;
+        display: flex;
+        background-color: rgb(95, 183, 234);
+        height: (80/@vw);
+        li a{
+            color: var(--color-nav);
+            width: 125px;
+            height: 100%;
+            /* 转为行内元素 */
+            display: inline-grid;
+            /* 垂直居中 */
+            place-items: center;
+            font-size: (40/@vw);
+            z-index: 1;
+            /* 相对定位 */
+            position: relative;
+            /* 溢出隐藏 */
+            overflow: hidden;
 
-        a{
-            display: inline-block;
-            width: (84/@vw);
-            height: (84/@vw);
+            .title{
+                display: none;
+            }
+
+            &:hover{
+                color: #fff;
+            }
+
+            .iconfont{
+                font-size: (30/@vw);
+            }
+
+            &.nav_item_active{
+                color: #fff;
+                /* 上下移动 */
+                transform: translateY(-20%);
+                font-size: 45px;
+                /* 使用贝塞尔曲线 */
+                transition: transform 0.5s cubic-bezier(0.175,0.885,0.32,1.275);
+            }
+
+            &.nav_item_active .title{
+                display: block;
+                font-size: (16/@vw);
+            }
         }
-    }
 
-    .function{
-        margin-bottom: (45/@vw);
-        width: (122/@vw);
-        height: (122/@vw);
-        line-height:(122/@vw) ;
-        background-color: rgba(190, 190, 190, 1);
-        background-image: url(../images/功能图标-绿.png);
-        background-size: cover;
-        font-size: (36 / @vw);
-        text-align: center;
-        border-radius: 100%;
-        border: 1px solid rgba(187, 187, 187, 1);
-        overflow: hidden;
-
-        a{
-            color: #000;
-            display: inline-block;
-            width: (122/@vw);
-            height: (122/@vw);
+        .nav_indicator{
+            width: (90/@vw);
+            height: (90/@vw);
+            border-radius: 50%;
+            background-color: rgb(95, 183, 234);
+            position: absolute;
+            top: -35px;
+            left: calc(140px);
+            z-index: 1;
+            /* 贝塞尔曲线 */
+            transition: left 0.5s cubic-bezier(0.175,0.885,0.32,1.275);
         }
     }
 }
+
 
 
 .enter-anim {

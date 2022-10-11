@@ -22,6 +22,7 @@ button,
 select,
 textarea {
   outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .ellipsis {
   overflow: hidden;
@@ -96,7 +97,8 @@ header .header_left .header_btn a {
   position: relative;
   height: 167.59493671vw;
   width: 100%;
-  background-color: antiquewhite;
+  background-image: url(../images/背景.jpg);
+  background-size: cover;
   overflow: hidden;
 }
 .container .triangle {
@@ -157,7 +159,7 @@ header .header_left .header_btn a {
   top: 0;
   left: 0;
   width: 100%;
-  height: 202.02531646vw;
+  height: 181.7721519vw;
   background-color: rgba(0, 0, 0, 0.312);
 }
 .popup .upload_box {

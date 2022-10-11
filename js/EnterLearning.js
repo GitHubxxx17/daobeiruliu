@@ -111,7 +111,7 @@ for (let x of $('.highlight')) {
     arr1.push(x);
     arr2.push(x.innerText);
 }
-let btns = $('.header_btn');
+let btns = $('.header_right .header_btn');
 flag = true;
 flag1 = true;
 //点击进入答题模式
@@ -206,5 +206,18 @@ function reset() {
         x.onclick = null;
     }
 }
+
+//点击打开记忆库
+btns[0].onclick = () => {
+    // 让弹窗出现
+    $('.popup').style.display = 'block';
+
+}
+
+$('.popup').onclick = () => {
+    $('.popup').style.display = 'none';
+}
+
+$('.memorybank').onclick = (e) => e.stopPropagation();
 
 

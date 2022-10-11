@@ -76,3 +76,23 @@ window.onload = function() {
         return false;
     }
 }
+
+
+//底部导航栏动画
+let vw = 3.95
+let footer_nav = document.querySelector('.footer_nav');
+footer_nav.querySelectorAll('li a').forEach((a, i) => {
+    a.onclick = () => {
+        if (a.classList.contains('nav_item_active')) return
+
+        footer_nav.querySelectorAll('li a').forEach(e => {
+            e.classList.remove('nav_item_active')
+        })
+
+        a.classList.add('nav_item_active')
+
+        let nav_indicator = footer_nav.querySelector('.nav_indicator')
+        let left = ((i * 125) + 60 - 45) / vw;
+        nav_indicator.style.left = `calc(${left}vw)`
+    }
+})

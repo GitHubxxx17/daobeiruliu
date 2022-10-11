@@ -173,7 +173,10 @@ btns[6].onclick = () => {
 
 //点击保存
 btns[4].onclick = () => {
-
+    let tps = getData('tps');
+    let id = tps.length;
+    tps.push({tpId:id,title:$('.title input').value,context:$('.text_page').innerHTML})
+    saveData('tps',tps);
 }
 
 //点击取消所有挖空
@@ -295,6 +298,14 @@ function CancelHollowing(e, n) {
 //         numberOfPages.innerHTML = `${pageNow + 1}/${pages}`
 //     }
 // }
+
+let template = getData('template');
+if(template.upload){
+    $('.title input').value = template.title;
+    $('.text_page').innerHTML = template.context;
+    template.upload = false;
+    saveData('template',template);
+}
 
 
 
