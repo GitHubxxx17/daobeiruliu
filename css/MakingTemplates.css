@@ -231,7 +231,7 @@ header .header_choice {
   transform-origin: left center;
   border: none;
   outline: none;
-  overflow: hidden;
+  overflow: scroll;
 }
 .container .total_text .text_page .highlight {
   display: inline;
