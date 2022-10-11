@@ -39,11 +39,13 @@ header {
 
         .header_btn {
             margin-right: (5 / @vw);
+            background-size: cover;
+            &:nth-child(2) {
+                background-image: url(../images/输入.png);
+            }
 
             &:last-child {
-                background-color: transparent;
                 background-image: url(../images/提交.jpg);
-                background-size: cover;
                 margin-right: 0;
             }
         }

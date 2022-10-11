@@ -20,6 +20,7 @@
 
 .index_page {
     width: 100%;
+
     .header {
         display: flex;
         align-items: center;
@@ -31,7 +32,7 @@
         background-size: cover;
         text-align: center;
         border: 1px solid rgba(187, 187, 187, 1);
-    
+
         .search {
             position: relative;
             display: flex;
@@ -43,7 +44,7 @@
             border-radius: (16/@vw);
             background-color: rgba(255, 255, 255, 1);
             text-align: center;
-    
+
             input {
                 padding: 0 (5/@vw);
                 width: (180/@vw);
@@ -51,45 +52,43 @@
                 border-radius: (16/@vw);
                 border: 0;
             }
-    
+
             .searchicon {
                 position: absolute;
                 right: 0;
                 top: 0;
                 width: (32/@vw);
                 height: (32/@vw);
-
                 background-image: url(../images/搜索-2.png);
-                // background-position: center center;
                 background-size: cover;
                 border-radius: 50%;
                 background-color: transparent;
                 border: none;
             }
         }
-    
+
         .common {
             width: (48/@vw);
             height: (48/@vw);
-            line-height: (48/@vw);
-            background-color: rgba(255, 255, 255, 1);
-            color: rgba(16, 16, 16, 1);
-            font-size: (14/@vw);
-            text-align: center;
             border-radius: 100%;
             overflow: hidden;
-    
+
             a {
                 display: inline-block;
                 width: 100%;
                 height: 100%;
             }
         }
-    
+
         .callup_icon {
+            background-color: transparent;
+            background-image: url(../images/召集.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: (45/@vw);
             margin-left: (44/@vw);
         }
-    
+
         .fri {
             background-color: transparent;
             background-image: url(../images/好友.png);
@@ -98,36 +97,36 @@
             margin-left: (12/@vw);
         }
     }
-    
+
     .banner_body {
         position: relative;
         width: (395/@vw);
         height: (200/@vw);
         overflow: hidden;
-    
+
         .bannner_swipe {
             width: 100%;
             height: (200/@vw);
             display: flex;
-    
+
             .banner_swipe_item {
                 width: 100%;
                 height: 100%;
                 min-width: 100%;
-    
+
                 img {
                     height: 100%;
                     width: 100%;
                 }
             }
         }
-    
+
         .spots {
             position: absolute;
             left: 50%;
             bottom: (10/@vw);
             margin-left: (-60/@vw);
-    
+
             span {
                 display: inline-block;
                 width: (8/@vw);
@@ -136,16 +135,16 @@
                 border-radius: 50%;
                 margin-right: (15/@vw);
             }
-    
+
             .active {
                 background-color: #3a3a3a;
-    
+
             }
-    
+
         }
-    
+
     }
-    
+
     .mould_show {
         margin: (10/@vw);
         margin-top: (14/@vw);
@@ -154,12 +153,12 @@
         height: (480/@vw);
         border-radius: (19/@vw);
         // background-color: rgba(255, 255, 255, 1);
-        background-color:  #cae0df;
+        background-color: #cae0df;
         text-align: center;
         // border: 1px solid rgba(187, 187, 187, 1);
         border: 1px solid #b4ece9;
         overflow: scroll;
-        
+
         .title {
             display: flex;
             justify-content: space-between;
@@ -168,20 +167,20 @@
             margin-top: (16/@vw);
             width: 100%;
             height: (40/@vw);
-    
+
             .recommend {
                 height: 100%;
                 color: rgba(16, 16, 16, 1);
                 font-size: (28/@vw);
             }
-    
+
             .more {
                 height: 100%;
                 color: rgba(159, 159, 159, 1);
                 font-size: (14/@vw);
             }
         }
-    
+
         .box {
             margin-top: (14/@vw);
             margin-left: (11/@vw);
@@ -191,7 +190,7 @@
             background-color: rgba(255, 255, 255, 1);
             text-align: center;
             border: 1px solid rgba(187, 187, 187, 1);
-    
+
             .enter {
                 margin: (14/@vw) 0;
                 margin-right: (15/@vw);
@@ -204,7 +203,7 @@
                 font-size: (14/@vw);
                 text-align: center;
                 border-radius: 100%;
-                
+
             }
         }
     }
@@ -213,6 +212,8 @@
 
 .function_page {
     width: 100%;
+    background-image: url(../images/背景2.jpg);
+    background-size: cover;
     header {
         width: 100%;
         height: (56 / @vw);
@@ -222,7 +223,7 @@
         align-items: center;
         justify-content: space-between;
         padding: 0 (11 / @vw);
-    
+
         .header_left_1 {
             width: (167 / @vw);
             height: (44 / @vw);
@@ -236,11 +237,18 @@
                 background-size: cover;
             }
         }
-    
+
         .header_right {
             display: flex;
             align-items: center;
 
+
+            .header_btn:first-child {
+                background-color: transparent;
+                background-image: url(../images/召集.png);
+                background-size: cover;
+                margin-left: (12 / @vw);
+            }
 
             .header_btn:last-child {
                 background-color: transparent;
@@ -250,13 +258,12 @@
                 margin-left: (12 / @vw);
             }
         }
+
         .header_btn {
             width: (45 / @vw);
             height: (45 / @vw);
             border-radius: 50%;
             text-align: center;
-            line-height: (45 / @vw);
-            font-size: (14 / @vw);
             overflow: hidden;
             border: none;
 
@@ -264,58 +271,58 @@
                 display: inline-block;
                 width: 100%;
                 height: 100%;
-            } 
+            }
         }
     }
-    
+
     .container {
         position: relative;
         height: (672 / @vw);
         width: 100%;
         overflow: hidden;
-        
+
         .triangle {
             position: absolute;
             background: #edfcff;
             clip-path: polygon(0 0, 100% 0, 0 100%, 0 0);
             overflow: hidden;
-            box-shadow: (3 / @vw) (7 / @vw) (6 / @vw) (1 / @vw) rgba(0, 0, 0, 0.374);
-    
+            
+
             a {
                 display: inline-block;
                 width: 100%;
                 height: 100%;
             }
-    
+
             span {
                 position: absolute;
-                font-size: (14 / @vw);
+                font-size: (15 / @vw);
             }
- 
+
         }
-    
+
         .edit {
             width: (128 / @vw);
             height: (206 / @vw);
             top: (106 / @vw);
             left: (78 / @vw);
             transform: rotate(159deg);
-    
-            span {           
+
+            span {
                 top: (60 / @vw);
                 left: (20 / @vw);
                 transform: rotate(-159deg);
             }
         }
-    
+
         .learning_model {
             width: (206 / @vw);
             height: (139 / @vw);
             top: (74 / @vw);
             left: (174 / @vw);
             transform: rotate(240deg);
-    
-            span {           
+
+            span {
                 top: (40 / @vw);
                 left: (28 / @vw);
                 transform: rotate(-240deg);
@@ -328,36 +335,36 @@
             top: (103 / @vw);
             left: (71 / @vw);
             transform: rotate(-16deg);
-    
-            span {           
+
+            span {
                 top: (16 / @vw);
                 left: (5 / @vw);
                 transform: rotate(16deg);
             }
         }
-    
+
         .random_matching {
             width: (111 / @vw);
             height: (104 / @vw);
             top: (249 / @vw);
             left: (120 / @vw);
             transform: rotate(310deg);
-    
-            span {           
+
+            span {
                 top: (20 / @vw);
                 left: (5 / @vw);
                 transform: rotate(-310deg);
             }
         }
-    
+
         .enter_Learning {
             width: (157 / @vw);
             height: (153 / @vw);
             top: (340 / @vw);
             left: (183 / @vw);
             transform: rotate(174deg);
-    
-            span {           
+
+            span {
                 top: (32 / @vw);
                 left: (20 / @vw);
                 transform: rotate(-174deg);
@@ -374,7 +381,7 @@
         width: 100%;
         height: (808 / @vw);
         background-color: rgba(0, 0, 0, 0.312);
-    
+
         .friend_invitation {
             z-index: 1000;
             position: absolute;
@@ -385,13 +392,13 @@
             background-color: #fff;
             border: (1 / @vw) solid #bbb;
             border-radius: (28 / @vw);
-    
+
             .fi_header {
                 width: 100%;
                 height: (73 / @vw);
                 border-bottom: (4 / @vw) solid #000;
                 overflow: hidden;
-    
+
                 h1 {
                     width: 100%;
                     height: 100%;
@@ -400,10 +407,10 @@
                     font-size: (28 / @vw);
                 }
             }
-    
+
             .menu {
                 width: 100%;
-    
+
                 li {
                     width: 100%;
                     height: (64 / @vw);
@@ -411,7 +418,7 @@
                     padding: 0 (16 / @vw);
                     line-height: (64 / @vw);
                     margin-top: (4 / @vw);
-    
+
                     img {
                         width: (40 / @vw);
                         height: (40 / @vw);
@@ -429,7 +436,8 @@
 
 .personal_page {
     width: 100%;
-    .main{
+
+    .main {
         position: relative;
         margin: 0 (15/@vw);
         margin-top: (24/@vw);
@@ -440,13 +448,13 @@
         background-color: rgba(255, 255, 255, 1);
         text-align: center;
         border: 1px solid rgba(187, 187, 187, 1);
-    
-        .container{
+
+        .container {
             position: relative;
             width: 100%;
             height: (195/@vw);
-    
-            .head_portrait{
+
+            .head_portrait {
                 position: absolute;
                 margin-top: (50/@vw);
                 margin-left: (9/@vw);
@@ -459,14 +467,14 @@
                 font-size: (14/@vw);
                 line-height: (144/@vw);
                 // border: 1px solid rgba(187, 187, 187, 1);
-    
-                .head_box{
+
+                .head_box {
                     width: (144/@vw);
                     height: (144/@vw);
                     border-radius: 100%;
                     position: relative;
-    
-                    input{
+
+                    input {
                         width: 100%;
                         height: 100%;
                         opacity: 0;
@@ -479,33 +487,33 @@
                     }
                 }
             }
-    
-            .show{
+
+            .show {
                 position: absolute;
                 left: (160/@vw);
                 top: (70/@vw);
-    
-                .name{
+
+                .name {
                     height: (31/@vw);
                     color: rgba(16, 16, 16, 1);
                     font-size: (20/@vw);
-                    
+
                 }
-    
-                .id{
+
+                .id {
                     height: (20/@vw);
                     color: rgba(16, 16, 16, 1);
                     font-size: (14/@vw);
                     text-align: left;
                 }
             }
-            
-            .setting_fri{
+
+            .setting_fri {
                 position: absolute;
                 right: (25/@vw);
                 top: (16/@vw);
-        
-                .setting{
+
+                .setting {
                     width: (48/@vw);
                     height: (48/@vw);
                     line-height: (48/@vw);
@@ -516,15 +524,15 @@
                     text-align: center;
                     border-radius: 100%;
                     overflow: hidden;
-    
+
                     a {
                         display: inline-block;
                         width: 100%;
                         height: 100%;
                     }
                 }
-        
-                .fri{
+
+                .fri {
                     margin-top: (8/@vw);
                     width: (48/@vw);
                     height: (48/@vw);
@@ -537,9 +545,9 @@
                 }
             }
         }
-    
-        
-        .daily{
+
+
+        .daily {
             display: flex;
             justify-content: space-between;
             margin: 0 (37/@vw);
@@ -551,12 +559,12 @@
             background-color: rgba(255, 255, 255, 1);
             text-align: center;
             border: 1px solid rgba(187, 187, 187, 1);
-    
-            .clock{
+
+            .clock {
                 margin: (12/@vw) 0;
                 width: (78/@vw);
                 height: (93/@vw);
-                line-height:  (93/@vw);
+                line-height: (93/@vw);
                 border-radius: (21/@vw);
                 background-color: rgba(255, 255, 255, 1);
                 color: rgba(16, 16, 16, 1);
@@ -564,13 +572,13 @@
                 text-align: center;
                 border: 1px solid rgba(187, 187, 187, 1);
             }
-    
-            .right{
+
+            .right {
                 margin: (12/@vw) 0;
                 width: (173/@vw);
                 height: (93/@vw);
-    
-                .points{
+
+                .points {
                     width: 100%;
                     height: (45/@vw);
                     background-image: url(../images/积分.png);
@@ -580,8 +588,8 @@
                     text-align: center;
                     border-radius: (18/@vw);
                 }
-    
-                .blank{
+
+                .blank {
                     margin-top: (10/@vw);
                     width: 100%;
                     height: (35/@vw);
@@ -592,14 +600,15 @@
                     text-align: center;
                     border-radius: (18/@vw);
                     border: 1px solid rgba(187, 187, 187, 1);
-                    a{
+
+                    a {
                         display: block;
                     }
                 }
             }
         }
-    
-        .p_m{
+
+        .p_m {
             margin: 0 (37/@vw);
             margin-top: (8/@vw);
             width: (291/@vw);
@@ -610,8 +619,8 @@
             text-align: center;
             border-radius: (37/@vw);
             border: 1px solid rgba(187, 187, 187, 1);
-    
-            .tab{
+
+            .tab {
                 display: flex;
                 justify-content: space-between;
                 margin-top: (8/@vw);
@@ -620,19 +629,19 @@
                 height: (32/@vw);
                 line-height: (32/@vw);
                 text-align: left;
-    
-                a{
+
+                a {
                     display: block;
                 }
-                
-                .active a{
+
+                .active a {
                     color: #1684fc;
                     border-bottom: 2px solid #1684fc;
                 }
-               
+
             }
-    
-            .common{
+
+            .common {
                 margin: 0 (16/@vw);
                 margin-top: (8/@vw);
                 width: (259/@vw);
@@ -643,12 +652,12 @@
                 font-size: (14/@vw);
                 text-align: center;
             }
-    
-            .plans{
-                display: none;     
+
+            .plans {
+                display: none;
             }
-    
-            .memory{
+
+            .memory {
                 display: block;
             }
         }
@@ -665,13 +674,14 @@ footer {
     background-color: rgba(255, 255, 255, 1);
     text-align: center;
 
-    .footer_nav{
+    .footer_nav {
         position: relative;
         display: flex;
         // background-color: rgb(95, 183, 234);
         background-color: #6dc2bf;
         height: (60/@vw);
-        li a{
+
+        li a {
             color: var(--color-nav);
             width: (130/@vw);
             height: 100%;
@@ -686,34 +696,34 @@ footer {
             /* 溢出隐藏 */
             overflow: hidden;
 
-            .title{
+            .title {
                 display: none;
             }
 
-            &:hover{
+            &:hover {
                 color: #fff;
             }
 
-            .iconfont{
+            .iconfont {
                 font-size: (30/@vw);
             }
 
-            &.nav_item_active{
+            &.nav_item_active {
                 color: #fff;
                 /* 上下移动 */
                 transform: translateY(-20%);
                 font-size: 45px;
                 /* 使用贝塞尔曲线 */
-                transition: transform 0.2s cubic-bezier(0.175,0.885,0.32,1.275);
+                transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             }
 
-            &.nav_item_active .title{
+            &.nav_item_active .title {
                 display: block;
                 font-size: (16/@vw);
             }
         }
 
-        .nav_indicator{
+        .nav_indicator {
             width: (90/@vw);
             height: (90/@vw);
             border-radius: 50%;
@@ -724,7 +734,7 @@ footer {
             left: calc(20px);
             z-index: 1;
             /* 贝塞尔曲线 */
-            transition: left 0.2s cubic-bezier(0.175,0.885,0.32,1.275);
+            transition: left 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
     }
 }

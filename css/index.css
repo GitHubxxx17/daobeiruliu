@@ -223,11 +223,6 @@ a {
 .index_page .header .common {
   width: 12.15189873vw;
   height: 12.15189873vw;
-  line-height: 12.15189873vw;
-  background-color: #ffffff;
-  color: #101010;
-  font-size: 3.5443038vw;
-  text-align: center;
   border-radius: 100%;
   overflow: hidden;
 }
@@ -237,6 +232,11 @@ a {
   height: 100%;
 }
 .index_page .header .callup_icon {
+  background-color: transparent;
+  background-image: url(../images/召集.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 11.39240506vw;
   margin-left: 11.13924051vw;
 }
 .index_page .header .fri {
@@ -339,6 +339,8 @@ a {
 }
 .function_page {
   width: 100%;
+  background-image: url(../images/背景2.jpg);
+  background-size: cover;
 }
 .function_page header {
   width: 100%;
@@ -364,6 +366,12 @@ a {
   display: flex;
   align-items: center;
 }
+.function_page header .header_right .header_btn:first-child {
+  background-color: transparent;
+  background-image: url(../images/召集.png);
+  background-size: cover;
+  margin-left: 3.03797468vw;
+}
 .function_page header .header_right .header_btn:last-child {
   background-color: transparent;
   background-image: url(../images/好友.png);
@@ -376,8 +384,6 @@ a {
   height: 11.39240506vw;
   border-radius: 50%;
   text-align: center;
-  line-height: 11.39240506vw;
-  font-size: 3.5443038vw;
   overflow: hidden;
   border: none;
 }
@@ -397,7 +403,6 @@ a {
   background: #edfcff;
   clip-path: polygon(0 0, 100% 0, 0 100%, 0 0);
   overflow: hidden;
-  box-shadow: 0.75949367vw 1.7721519vw 1.51898734vw 0.25316456vw rgba(0, 0, 0, 0.374);
 }
 .function_page .container .triangle a {
   display: inline-block;
@@ -406,7 +411,7 @@ a {
 }
 .function_page .container .triangle span {
   position: absolute;
-  font-size: 3.5443038vw;
+  font-size: 3.79746835vw;
 }
 .function_page .container .edit {
   width: 32.40506329vw;

@@ -100,11 +100,13 @@ header .header_right {
 }
 header .header_right .header_btn {
   margin-right: 1.26582278vw;
+  background-size: cover;
+}
+header .header_right .header_btn:nth-child(2) {
+  background-image: url(../images/输入.png);
 }
 header .header_right .header_btn:last-child {
-  background-color: transparent;
   background-image: url(../images/提交.jpg);
-  background-size: cover;
   margin-right: 0;
 }
 header .header_btn {
