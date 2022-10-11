@@ -1,0 +1,145 @@
+@import 'base';
+@vw: 3.95vw;
+
+header {
+    width: 100%;
+    height: (56 / @vw);
+    background-image: url(../images/顶栏-1.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 (11 / @vw);
+
+    .header_left {
+        .header_btn {
+            background-color: transparent;
+            background-image: url(../images/返回.png);
+            background-size: cover;
+            width: (45 / @vw);
+            height: (45 / @vw);
+            border: none;
+            border-radius: 50%;
+            text-align: center;
+            line-height: (45 / @vw);
+            font-size: (14 / @vw);
+            overflow: hidden;
+
+            a {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.container {
+    position: relative;
+    height: (662 / @vw);
+    width: 100%;
+    background-color: antiquewhite;
+    overflow: hidden;
+
+    .triangle {
+        position: absolute;
+        background: rgb(99, 203, 255);
+        clip-path: polygon(0 0, 100% 0, 0 100%, 0 0);
+        overflow: hidden;
+
+        a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+
+        span {
+            position: absolute;
+            font-size: (14 / @vw);
+        }
+    }
+
+    .upload {
+        width: (175 / @vw);
+        height: (132 / @vw);
+        top: (86 / @vw);
+        left: (77 / @vw);
+        transform: rotate(322deg);
+
+        span {
+            top: (25 / @vw);
+            left: (20 / @vw);
+            transform: rotate(-322deg);
+        }
+    }
+
+    .copy {
+        width: (114 / @vw);
+        height: (131 / @vw);
+        top: (231 / @vw);
+        left: (234 / @vw);
+        transform: rotate(164deg);
+
+        span {
+            top: (25 / @vw);
+            left: (10 / @vw);
+            transform: rotate(-164deg);
+        }
+    }
+
+    .modify {
+        width: (115 / @vw);
+        height: (138 / @vw);
+        top: (407 / @vw);
+        left: (107 / @vw);
+        transform: rotate(310deg);
+
+        span {
+            top: (22 / @vw);
+            left: (12 / @vw);
+            transform: rotate(-310deg);
+        }
+    }
+}
+
+.popup {
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: (718 / @vw);
+    background-color: rgba(0, 0, 0, 0.312);
+
+    .upload_box {
+        position: absolute;
+        top: (254 / @vw);
+        left: (55 / @vw);
+        width: (284 / @vw);
+        height: (232 / @vw);
+        background-color: #fff;
+        border: 1px solid #bbb;
+        border-radius: (54 / @vw) 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .upload {
+            width: (200 / @vw);
+            height: (200 / @vw);
+            border: 2px dashed #666;
+            position: relative;
+
+            input {
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}

@@ -1,0 +1,247 @@
+@import 'base';
+@import 'fri_slidebox';
+@vw: 3.95vw;
+
+header {
+    width: 100%;
+    height: (56 / @vw);
+    background-image: url(../images/顶栏-1.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 (11 / @vw);
+
+    .header_left {
+        .header_btn {
+            background-color: transparent;
+            background-image: url(../images/返回.png);
+            background-size: cover;
+        }
+    }
+
+    .header_right {
+        display: flex;
+        align-items: center;
+    }
+
+    .header_btn {
+        width: (45 / @vw);
+        height: (45 / @vw);
+        border: none;
+        border-radius: 50%;
+        text-align: center;
+        line-height: (45 / @vw);
+        font-size: (14 / @vw);
+        overflow: hidden;
+
+        a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+}
+
+
+.container {
+    position: relative;
+    height: (662 / @vw);
+    width: 100%;
+    background-color: rgb(190, 143, 255);
+
+    .triangle {
+        position: absolute;
+        background: rgb(99, 203, 255);
+        clip-path: polygon(0 0, 100% 0, 0 100%, 0 0);
+        overflow: hidden;
+
+        a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+
+        span {
+            position: absolute;
+            font-size: (14 / @vw);
+        }
+    }
+
+    .friend_invitation {
+        width: (106 / @vw);
+        height: (106 / @vw);
+        top: (103 / @vw);
+        left: (71 / @vw);
+        transform: rotate(-16deg);
+
+        span {           
+            top: (16 / @vw);
+            left: (5 / @vw);
+            transform: rotate(16deg);
+        }
+    }
+
+    .random_matching {
+        width: (111 / @vw);
+        height: (104 / @vw);
+        top: (249 / @vw);
+        left: (120 / @vw);
+        transform: rotate(310deg);
+
+        span {           
+            top: (20 / @vw);
+            left: (5 / @vw);
+            transform: rotate(-310deg);
+        }
+    }
+
+    .enter_Learning {
+        width: (157 / @vw);
+        height: (153 / @vw);
+        top: (340 / @vw);
+        left: (183 / @vw);
+        transform: rotate(174deg);
+
+        span {           
+            top: (32 / @vw);
+            left: (20 / @vw);
+            transform: rotate(-174deg);
+        }
+    }
+}
+
+.popup {
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: (798 / @vw);
+    background-color: rgba(0, 0, 0, 0.312);
+
+    .friend_invitation {
+        position: absolute;
+        top: (208 / @vw);
+        left: (40 / @vw);
+        width: (314 / @vw);
+        height: (490 / @vw);
+        background-color: #fff;
+        border: (1 / @vw) solid #bbb;
+        border-radius: (28 / @vw);
+
+        .fi_header {
+            width: 100%;
+            height: (73 / @vw);
+            border-bottom: (4 / @vw) solid #000;
+            overflow: hidden;
+
+            h1 {
+                width: 100%;
+                height: 100%;
+                line-height: (73 / @vw);
+                text-align: center;
+                font-size: (28 / @vw);
+            }
+        }
+
+        .menu {
+            width: 100%;
+
+            li {
+                width: 100%;
+                height: (64 / @vw);
+                border: 1px solid #bbb;
+                padding: 0 (16 / @vw);
+                line-height: (64 / @vw);
+                margin-top: (4 / @vw);
+
+                img {
+                    width: (40 / @vw);
+                    height: (40 / @vw);
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .close {
+            position: absolute;
+            bottom: (-78 / @vw);
+            left: 50%;
+            transform: translateX(-50%);
+            width: (64 / @vw);
+            height: (64 / @vw);
+            border: none;
+            border-radius: 50%;
+            background-color: #FFF;
+            text-align: center;
+            line-height: (64 / @vw);
+
+            &::after {
+                font-family: 'icomoon';
+                content: '\e914';
+                font-size: (20/@vw);
+            }
+        }
+    }
+}
+
+.footer_nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 0px;
+    bottom: 0px;
+    width: (395/@vw);
+    height: (80/@vw);
+    padding: 0 (25/@vw);
+    background-color: rgba(255, 255, 255, 1);
+    text-align: center;
+    border: 1px solid rgba(187, 187, 187, 1);
+
+    .common{
+        margin-bottom: (20/@vw);
+        width: (84/@vw);
+        height: (84/@vw);
+        background-color: rgba(255, 255, 255, 1);
+        color: rgba(16, 16, 16, 1);
+        font-size: (14 / @vw);
+        line-height:(84/@vw) ;
+        text-align: center;
+        border-radius: 100%;
+        border: 1px solid rgba(187, 187, 187, 1);
+        overflow: hidden;
+
+        a{
+            display: inline-block;
+            width: (84/@vw);
+            height: (84/@vw);
+        }
+    }
+
+    .function{
+        margin-bottom: (45/@vw);
+        width: (122/@vw);
+        height: (122/@vw);
+        line-height:(122/@vw) ;
+        background-color: rgba(190, 190, 190, 1);
+        background-image: url(../images/功能图标-绿.png);
+        background-size: cover;
+        font-size: (36/@vw);
+        text-align: center;
+        border-radius: 100%;
+        border: 1px solid rgba(187, 187, 187, 1);
+        overflow: hidden;
+
+        a{
+            color: #000;
+            display: inline-block;
+            width: (122/@vw);
+            height: (122/@vw);
+        }
+    }
+}
+

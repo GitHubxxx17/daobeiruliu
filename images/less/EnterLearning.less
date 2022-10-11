@@ -1,0 +1,193 @@
+@import 'base';
+
+@vw: 3.95vw;
+
+header {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: (56 / @vw);
+    background-image: url(../images/顶栏-1.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 (11 / @vw);
+    border: 1px solid #bbb;
+
+    .header_left {
+        overflow: hidden;
+
+        .header_btn {
+            background-color: transparent;
+            background-image: url(../images/返回.png);
+            background-size: cover;
+        }
+
+
+        a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .header_right {
+        display: flex;
+        align-items: center;
+
+        .header_btn {
+            margin-right: (5 / @vw);
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+    }
+
+    .header_btn {
+        z-index: 10;
+        width: (45 / @vw);
+        height: (45 / @vw);
+        border: none;
+        border-radius: 50%;
+        text-align: center;
+        line-height: (45 / @vw);
+        font-size: (14 / @vw);
+        cursor: pointer;
+        transition: all .3s;
+    }
+
+    .btn_current {
+        background-color: rgb(127, 238, 255);
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+
+.container {
+    margin-top: (76 /@vw);
+    width: 100%;
+
+    .total_text {
+        position: relative;
+        font-size: (20 / @vw);
+        border: 1px solid #bbb;
+        margin: 0 auto;
+        width: (363 / @vw);
+        height: (623 / @vw);
+        box-shadow: (3 / @vw) (7 / @vw) (6 / @vw) (1 / @vw) rgba(0, 0, 0, 0.374);
+
+        .text_page {
+            position: absolute;
+            padding: (20 / @vw) (10 / @vw);
+            width: (363 / @vw);
+            height: (623 / @vw);
+            background-image: url(../images/模板背景-2.jpg);
+            background-size: cover;
+            transition: transform 2s ease-in-out, z-index 2s ease-in-out;
+            transform-origin: left center;
+            line-height: (30 / @vw);
+            overflow: scroll;
+
+            .highlight {
+                display: inline;
+                background: rgb(255, 255, 146);
+                color: rgb(255, 111, 126);
+                transition: all .3s;
+                cursor: pointer;
+            }
+
+            .input {
+                width: auto;
+                background-color: transparent !important;
+                color: rgb(103, 255, 232) !important;
+                border-bottom: (2 / @vw) rgb(47, 172, 255) solid;
+                height: (30 / @vw);
+                outline: none;
+                display: inline;
+                // -webkit-user-modify: read-write-plaintext-only;
+            }
+
+            .recite {
+                height: (30 / @vw);
+                background-color: darkgray !important;
+                color: darkgray !important;
+                border-radius: (5 / @vw);
+                user-select: none;
+            }
+        }
+    }
+
+
+    .turn_pages {
+        margin: (26 / @vw) auto;
+        width: (232 / @vw);
+        height: (32 / @vw);
+        display: flex;
+        text-align: center;
+        line-height: (32 / @vw);
+        font-size: (14 / @vw);
+
+        .number_of_pages {
+            flex: 1;
+            height: 100%;
+        }
+
+        .pageUp,
+        .pageDown {
+            width: (63 / @vw);
+            height: 100%;
+            border: 1px solid #bbb;
+        }
+    }
+}
+
+.popup {
+    // display: none;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: (798 / @vw);
+    background-color: rgba(0, 0, 0, 0.312);
+
+
+
+    .memorybank {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: (354 / @vw);
+        height: (600 / @vw);
+        background-color: #fff;
+        border: 1px solid #bbb;
+        border-radius: (20 / @vw);
+        padding: (40 / @vw) (20 / @vw);
+
+        .bank {
+            width: 100%;
+            height: 100%;
+            border: 1px solid #000;
+            overflow: hidden;
+
+            ul {
+                width: 100%;
+
+                li {
+                    width: 100%;
+                    height: (80 / @vw);
+                    border: 1px solid rgb(169, 197, 202);
+                }
+            }
+        }
+
+
+    }
+}

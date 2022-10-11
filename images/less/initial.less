@@ -1,0 +1,61 @@
+@import 'base';
+
+@vw: 3.95vw;
+
+body {
+    background-image: url(../images/登录-1.jpg);
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    height: (798 / @vw);
+
+    .logo {
+        position: absolute;
+        top: (197 / @vw);
+        left: (67 / @vw);
+        width: (261 / @vw);
+        height: (123 / @vw);
+        background-color: #fff;
+        border-radius: 50% / 50%;
+    }
+
+    .circle {
+        position: absolute;
+        top: (304 / @vw);
+        left: (34 / @vw);
+        width: (33 / @vw);
+        height: (33 / @vw);
+        background-color: #fff;
+        border-radius: 50%;
+    }
+
+    .login,
+    .register {
+        position: absolute;
+        left: (97 / @vw);
+        width: (200 / @vw);
+        height: (72 / @vw);
+        text-align: center;
+        line-height: (72 / @vw);
+        background-color: #fff;
+        border-radius: (60 / @vw) 0;
+        font-size: (14 / @vw);
+        overflow: hidden;
+
+        a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .login {
+        top: (417 / @vw);
+    }
+
+    .register {
+        top: (515 / @vw);
+    }
+}

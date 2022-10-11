@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>制作模板</title>
+    <link rel="stylesheet" href="./css/MakingTemplates.css">
+</head>
+
+<body>
+    <header>
+        <div class="header_left">
+            <button class="header_btn">
+                <a href="javascript:history.back(-1)"></a>
+            </button>
+        </div>
+        <div class="header_right">
+            <button class="header_btn">选择</button>
+            <button class="header_btn">挖空</button>
+            <button class="header_btn"></button>
+            <button class="header_btn">保存</button>
+            <button class="header_btn">取消</button>
+        </div>
+        <div class="header_choice hidden">
+            <button class="header_btn">返回</button>
+            <button class="header_btn">取消</button>
+        </div>
+    </header>
+    <div class="popup">
+        
+        <div class="cancel">
+            <p>该操作将清除所有挖空部分，请谨慎选择</p>
+            <div class="cancel_btn">
+                <button>确认</button>
+            <button>保留</button>
+            </div>
+            
+        </div>
+    </div>
+    <div class="container">
+        <div class="title"><input type="text" placeholder="请填写模板名称" class="templates_name"></div>
+        <div class="total_text">
+            <div class="text_page" contenteditable="false"></div>
+        </div>
+
+        <!-- <div class="turn_pages">
+            <div class="pageUp">上一页</div>
+            <div class="number_of_pages">1/1</div>
+            <div class="pageDown">下一页</div>
+        </div> -->
+    </div>
+</body>
+<script src="./js/base.js"></script>
+<script src="./js/MakingTemplates.js"></script>
+
+</html>

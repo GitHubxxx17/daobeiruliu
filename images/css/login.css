@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rbga(0, 0, 0, 0);
+}
+body {
+  font-family: '微软雅黑';
+}
+img {
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+ol,
+ul {
+  list-style: none;
+}
+input,
+button,
+select,
+textarea {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+/*禁用了文本的拖拉，尤其在谷歌下*/
+textarea {
+  resize: none;
+}
+/*为了使文本段落左右两边对齐*/
+p {
+  text-align: justify;
+  text-justify: distribute;
+}
+/*======== Link ========*/
+a {
+  color: #333;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+/*清空浮动的代码-start*/
+.clr:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.clr {
+  *zoom: 1;
+}
+/*清空浮动的代码-end*/
+/* 页面元素初始化和常用样式定义-end */
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?19tb89');
+  src: url('../fonts/icomoon.eot?19tb89#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?19tb89') format('truetype'), url('../fonts/icomoon.woff?19tb89') format('woff'), url('../fonts/icomoon.svg?19tb89#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+body {
+  background-image: url(../images/登录-1.jpg);
+  background-size: cover;
+}
+.login_box {
+  position: relative;
+  margin: 21.01265823vw auto;
+  width: 77.46835443vw;
+  height: 126.58227848vw;
+  background-color: rgba(255, 255, 255, 0.522);
+  border-radius: 1.26582278vw;
+  padding-top: 7.08860759vw;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.login_box .logo {
+  width: 58.2278481vw;
+  height: 10.88607595vw;
+  background-image: url(../images/登录图标-2.jpg);
+  background-size: cover;
+  margin: 0 auto 11.39240506vw;
+}
+.login_box .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.login_box .form .form_control {
+  position: relative;
+  font-size: 4.05063291vw;
+  color: #fff;
+}
+.login_box .form .form_control input {
+  background-color: transparent;
+  padding: 2.02531646vw 0;
+  height: 12.15189873vw;
+  width: 62.78481013vw;
+  margin: 1.51898734vw 0;
+  font-size: 4.05063291vw;
+  border: none;
+  color: #fff;
+  border-bottom: 2px solid #000;
+}
+.login_box .form .form_control input:focus {
+  border-bottom: 2px solid #ff7ff6;
+}
+.login_box .form .form_control label {
+  position: absolute;
+  top: 4.55696203vw;
+  left: 0;
+  transition: all 0.5s;
+  transform-origin: left top;
+  pointer-events: none;
+}
+.login_box .form .form_control .label_change {
+  transform: scale(0.8) translateY(-5.56962025vw);
+}
+.login_box .form .err {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  color: red;
+  transition: 0.2s;
+}
+.login_box .form .login {
+  position: relative;
+  cursor: pointer;
+  margin-top: 10.37974684vw;
+  font-size: 5.06329114vw;
+  height: 14.6835443vw;
+  width: 62.78481013vw;
+  text-align: center;
+  line-height: 14.6835443vw;
+  font-weight: bolder;
+  border: 0;
+  overflow: hidden;
+  background-color: transparent;
+  color: #fff;
+}
+.login_box .form .login span {
+  position: absolute;
+  display: block;
+}
+.login_box .form .login span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 0.50632911vw;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+.login_box .form .login span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 0.50632911vw;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+.login_box .form .login span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 0.50632911vw;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+.login_box .form .login span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 0.50632911vw;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+.login_box .form .items {
+  margin: 0 7.08860759vw;
+  margin-top: 4.05063291vw;
+  width: 62.78481013vw;
+  height: 6.07594937vw;
+  border-radius: 4.55696203vw;
+}
+.login_box .form .items .auto {
+  float: left;
+  width: 6.07594937vw;
+  height: 6.07594937vw;
+  background-color: #ffffff;
+  text-align: center;
+  border: 1px solid #bbbbbb;
+}
+.login_box .form .items span {
+  float: left;
+  height: 6.07594937vw;
+  line-height: 6.07594937vw;
+  margin-left: 1.01265823vw;
+  font-size: 3.5443038vw;
+  text-align: left;
+}
+.login_box .form .items .register {
+  float: right;
+}
+.login_box .form .items .register a {
+  display: inline-block;
+  height: 6.07594937vw;
+  line-height: 6.07594937vw;
+  font-size: 3.5443038vw;
+  color: #101010;
+  text-align: center;
+}
+.login_box .label {
+  position: relative;
+  margin-top: 22.78481013vw;
+  text-align: center;
+  font-size: 3.5443038vw;
+}
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}

@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rbga(0, 0, 0, 0);
+}
+body {
+  font-family: '微软雅黑';
+}
+img {
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+ol,
+ul {
+  list-style: none;
+}
+input,
+button,
+select,
+textarea {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+/*禁用了文本的拖拉，尤其在谷歌下*/
+textarea {
+  resize: none;
+}
+/*为了使文本段落左右两边对齐*/
+p {
+  text-align: justify;
+  text-justify: distribute;
+}
+/*======== Link ========*/
+a {
+  color: #333;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+/*清空浮动的代码-start*/
+.clr:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.clr {
+  *zoom: 1;
+}
+/*清空浮动的代码-end*/
+/* 页面元素初始化和常用样式定义-end */
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?19tb89');
+  src: url('../fonts/icomoon.eot?19tb89#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?19tb89') format('truetype'), url('../fonts/icomoon.woff?19tb89') format('woff'), url('../fonts/icomoon.svg?19tb89#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+header {
+  width: 100%;
+  height: 14.17721519vw;
+  padding: 0 2.78481013vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 0.25316456vw solid #bbb;
+  font-size: 3.5443038vw;
+  background-image: url(../images/顶栏-1.jpg);
+  background-size: cover;
+}
+header .header_left .header_btn {
+  background-color: transparent;
+  background-image: url(../images/返回.png);
+  background-size: cover;
+}
+header .header_right .header_btn {
+  background-color: transparent;
+  background-image: url(../images/设置.png);
+  background-size: cover;
+}
+header .header_btn {
+  width: 11.39240506vw;
+  height: 11.39240506vw;
+  border-radius: 50%;
+  background-color: #fff;
+  border: none;
+  overflow: hidden;
+}
+header .header_btn a {
+  line-height: 11.39240506vw;
+  text-align: center;
+}
+.container {
+  width: 100%;
+  font-size: 3.5443038vw;
+}
+.container .main {
+  width: 100%;
+}
+.container .main li {
+  width: 100%;
+  height: 16.20253165vw;
+  margin-top: 3.03797468vw;
+  border: 0.25316456vw solid #bbb;
+}
+.container .main li a {
+  padding-left: 8.35443038vw;
+  line-height: 16.20253165vw;
+}
+.container .Switch_account,
+.container .Log_out {
+  width: 83.03797468vw;
+  height: 14.17721519vw;
+  border: 0.25316456vw solid #bbb;
+  border-radius: 4.55696203vw;
+  overflow: hidden;
+}
+.container .Switch_account a,
+.container .Log_out a {
+  text-align: center;
+  line-height: 14.17721519vw;
+}
+.container .Switch_account {
+  margin: 20.50632911vw 0 0 8.35443038vw;
+}
+.container .Log_out {
+  margin: 4.55696203vw 0 4.55696203vw 8.35443038vw;
+}
+a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}

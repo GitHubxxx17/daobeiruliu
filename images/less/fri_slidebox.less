@@ -1,0 +1,114 @@
+//out:false
+
+.fri_slidebox {
+    display: none;
+    z-index: 1000;
+    width: 100%;
+    height: (798 / @vw);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.312);
+    overflow: hidden;
+
+    .slideout {
+        animation: slideout .3s ease-in forwards;
+    }
+
+    .slidein {
+        animation: slidein .3s ease-out forwards;
+    }
+
+    .fri_box {
+        font-size: (14 / @vw);
+        position: absolute;
+        top: 0;
+        right: -80%;
+        height: 100%;
+        width: 80%;
+        background-color: #fff;
+
+        .System_notification {
+            width: 100%;
+            height: (86 / @vw);
+            background-color: #bbf;
+            display: flex;
+            align-items: center;
+            padding: (10 / @vw) (12 / @vw);
+
+            .System_icon {
+                width: (62 / @vw);
+                height: (62 / @vw);
+                border-radius: 50%;
+                overflow: hidden;
+                margin-right: (20 / @vw);
+            }
+
+            .notice {
+                height: (62 / @vw);
+                width: (210 / @vw);
+
+                p {
+                    margin-top: (10 / @vw);
+                }
+            }
+
+
+        }
+
+        .fir_li {
+            width: 100%;
+
+            li {
+                margin-top: (12 / @vw);
+                width: 100%;
+                height: (84 / @vw);
+                border: 1px solid #bbb;
+                overflow: hidden;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    padding: (10 / @vw) (12 / @vw);
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .fri_avatar {
+                    width: (62 / @vw);
+                    height: (62 / @vw);
+                    border-radius: 50%;
+                    overflow: hidden;
+                    margin-right: (20 / @vw);
+                }
+
+                .notice {
+                    height: (62 / @vw);
+                    width: (210 / @vw);
+    
+                    p {
+                        margin-top: (10 / @vw);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes slideout {
+    0% {
+        right: -80%;
+    }
+    100%{
+        right: 0;
+    }
+}
+
+@keyframes slidein {
+    0% {
+        right: 0;
+    }
+    100%{
+        right: -80%;
+    }
+}
