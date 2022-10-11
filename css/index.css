@@ -173,7 +173,7 @@ a {
   left: 0;
   display: flex;
   width: 300%;
-  transition: 0.2s;
+  transition: 0.1s;
 }
 .index_page {
   width: 100%;
@@ -328,12 +328,12 @@ a {
   float: right;
   width: 18.2278481vw;
   height: 18.2278481vw;
-  background-color: #ffffff;
+  background-image: url(../images/点赞.png);
+  background-size: cover;
   color: #101010;
   font-size: 3.5443038vw;
   text-align: center;
   border-radius: 100%;
-  border: 1px solid #bbbbbb;
 }
 .function_page {
   width: 100%;
@@ -355,7 +355,7 @@ a {
 .function_page header .header_left_2 .header_btn {
   border: none;
   background-color: transparent;
-  background-image: url(../images/返回.jpg);
+  background-image: url(../images/返回.png);
   background-size: cover;
 }
 .function_page header .header_right {

@@ -102,6 +102,9 @@ header .header_right .header_btn {
   margin-right: 1.26582278vw;
 }
 header .header_right .header_btn:last-child {
+  background-color: transparent;
+  background-image: url(../images/提交.jpg);
+  background-size: cover;
   margin-right: 0;
 }
 header .header_btn {

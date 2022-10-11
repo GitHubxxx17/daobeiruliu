@@ -104,9 +104,16 @@ header .header_right {
 header .header_right .header_btn {
   margin-right: 1.26582278vw;
 }
-header .header_right .header_btn:nth-child(3) {
-  background-image: url(../images/编辑.png);
+header .header_right .header_btn:first-child {
+  background-color: transparent;
+  background-image: url(../images/选择.png);
   background-size: cover;
+}
+header .header_right .header_btn:nth-child(3) {
+  background-color: transparent;
+  background-image: url(../images/编辑.png);
+  background-position: center center;
+  background-size: 12.40506329vw 12.40506329vw;
 }
 header .header_right .header_btn:last-child {
   margin-right: 0;
