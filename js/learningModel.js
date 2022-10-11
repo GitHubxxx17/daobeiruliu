@@ -1,12 +1,14 @@
 
 //好友邀请窗口显示隐藏
-$('.popup .close').onclick = () => {
-    $('.popup').style.display = 'none';
-}
-
 $('.container .friend_invitation').onclick = () => {
     $('.popup').style.display = 'block';
 }
+
+$('.popup').onclick = () => {
+    $('.popup').style.display = 'none';
+}
+
+$('.popup .friend_invitation').onclick = (e) => e.stopPropagation(); 
 
 //好友列表通知显示隐藏
 $('.fri_slidebox').onclick = () => {

@@ -7,6 +7,8 @@
 }
 body {
   font-family: '微软雅黑';
+  background-image: url(../images/背景.jpg);
+  background-size: cover;
 }
 img {
   vertical-align: middle;
@@ -163,6 +165,8 @@ a {
 .big_box {
   width: 100%;
   overflow: hidden;
+  background-image: url(../images/背景.jpg);
+  background-size: cover;
 }
 .scroll_box {
   position: relative;
@@ -344,15 +348,21 @@ a {
   justify-content: space-between;
   padding: 0 2.78481013vw;
 }
-.function_page header .header_left {
+.function_page header .header_left_1 {
   width: 42.27848101vw;
   height: 11.13924051vw;
+}
+.function_page header .header_left_2 .header_btn {
+  border: none;
+  background-color: transparent;
+  background-image: url(../images/返回.png);
+  background-size: cover;
 }
 .function_page header .header_right {
   display: flex;
   align-items: center;
 }
-.function_page header .header_right .header_btn {
+.function_page header .header_btn {
   width: 11.39240506vw;
   height: 11.39240506vw;
   border: 1px solid #bbb;
@@ -362,20 +372,18 @@ a {
   font-size: 3.5443038vw;
   overflow: hidden;
 }
-.function_page header .header_right .header_btn a {
+.function_page header .header_btn a {
   display: inline-block;
   width: 100%;
   height: 100%;
 }
-.function_page header .header_right .header_btn:first-child {
+.function_page header .header_btn:first-child {
   margin-right: 3.03797468vw;
 }
 .function_page .container {
   position: relative;
   height: 170.12658228vw;
   width: 100%;
-  background-image: url(../images/背景.jpg);
-  background-size: cover;
   overflow: hidden;
 }
 .function_page .container .triangle {
@@ -416,6 +424,95 @@ a {
   top: 8.10126582vw;
   left: 5.06329114vw;
   transform: rotate(-159deg);
+}
+.function_page .container .friend_invitation {
+  width: 26.83544304vw;
+  height: 26.83544304vw;
+  top: 26.07594937vw;
+  left: 17.97468354vw;
+  transform: rotate(-16deg);
+}
+.function_page .container .friend_invitation span {
+  top: 4.05063291vw;
+  left: 1.26582278vw;
+  transform: rotate(16deg);
+}
+.function_page .container .random_matching {
+  width: 28.10126582vw;
+  height: 26.32911392vw;
+  top: 63.03797468vw;
+  left: 30.37974684vw;
+  transform: rotate(310deg);
+}
+.function_page .container .random_matching span {
+  top: 5.06329114vw;
+  left: 1.26582278vw;
+  transform: rotate(-310deg);
+}
+.function_page .container .enter_Learning {
+  width: 39.74683544vw;
+  height: 38.73417722vw;
+  top: 86.07594937vw;
+  left: 46.32911392vw;
+  transform: rotate(174deg);
+}
+.function_page .container .enter_Learning span {
+  top: 8.10126582vw;
+  left: 5.06329114vw;
+  transform: rotate(-174deg);
+}
+.function_page .popup {
+  display: none;
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 202.02531646vw;
+  background-color: rgba(0, 0, 0, 0.312);
+}
+.function_page .popup .friend_invitation {
+  z-index: 1000;
+  position: absolute;
+  top: 27.34177215vw;
+  left: 10.12658228vw;
+  width: 79.49367089vw;
+  height: 124.05063291vw;
+  background-color: #fff;
+  border: 0.25316456vw solid #bbb;
+  border-radius: 7.08860759vw;
+}
+.function_page .popup .friend_invitation .fi_header {
+  width: 100%;
+  height: 18.48101266vw;
+  border-bottom: 1.01265823vw solid #000;
+  overflow: hidden;
+}
+.function_page .popup .friend_invitation .fi_header h1 {
+  width: 100%;
+  height: 100%;
+  line-height: 18.48101266vw;
+  text-align: center;
+  font-size: 7.08860759vw;
+}
+.function_page .popup .friend_invitation .menu {
+  width: 100%;
+}
+.function_page .popup .friend_invitation .menu li {
+  width: 100%;
+  height: 16.20253165vw;
+  border: 1px solid #bbb;
+  padding: 0 4.05063291vw;
+  line-height: 16.20253165vw;
+  margin-top: 1.01265823vw;
+}
+.function_page .popup .friend_invitation .menu li img {
+  width: 10.12658228vw;
+  height: 10.12658228vw;
+  border-radius: 50%;
+}
+.function_page .hidden {
+  display: none;
 }
 .personal_page {
   width: 100%;

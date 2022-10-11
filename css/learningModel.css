@@ -7,6 +7,8 @@
 }
 body {
   font-family: '微软雅黑';
+  background-image: url(../images/背景.jpg);
+  background-size: cover;
 }
 img {
   vertical-align: middle;
@@ -264,7 +266,7 @@ header .header_btn a {
 }
 .popup .friend_invitation {
   position: absolute;
-  top: 52.65822785vw;
+  top: 27.34177215vw;
   left: 10.12658228vw;
   width: 79.49367089vw;
   height: 124.05063291vw;
@@ -300,24 +302,6 @@ header .header_btn a {
   width: 10.12658228vw;
   height: 10.12658228vw;
   border-radius: 50%;
-}
-.popup .friend_invitation .close {
-  position: absolute;
-  bottom: -19.74683544vw;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 16.20253165vw;
-  height: 16.20253165vw;
-  border: none;
-  border-radius: 50%;
-  background-color: #FFF;
-  text-align: center;
-  line-height: 16.20253165vw;
-}
-.popup .friend_invitation .close::after {
-  font-family: 'icomoon';
-  content: '\e914';
-  font-size: 5.06329114vw;
 }
 .footer_nav {
   position: fixed;

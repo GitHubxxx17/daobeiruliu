@@ -7,6 +7,8 @@
 }
 body {
   font-family: '微软雅黑';
+  background-image: url(../images/背景.jpg);
+  background-size: cover;
 }
 img {
   vertical-align: middle;
@@ -66,7 +68,7 @@ a {
   font-display: block;
 }
 body {
-  background-image: url(../images/登录-2.jpg);
+  background-image: url(../images/登录-2.jpg) !important;
   background-size: cover;
 }
 .container {

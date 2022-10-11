@@ -7,6 +7,8 @@
 }
 body {
   font-family: '微软雅黑';
+  background-image: url(../images/背景.jpg);
+  background-size: cover;
 }
 img {
   vertical-align: middle;
@@ -97,8 +99,6 @@ header .header_left .header_btn a {
   position: relative;
   height: 167.59493671vw;
   width: 100%;
-  background-image: url(../images/背景.jpg);
-  background-size: cover;
   overflow: hidden;
 }
 .container .triangle {

@@ -6,6 +6,8 @@
 .big_box {
     width: 100%;
     overflow: hidden;
+    background-image: url(../images/背景.jpg);
+    background-size: cover;
 }
 
 .scroll_box {
@@ -213,45 +215,53 @@
         justify-content: space-between;
         padding: 0 (11 / @vw);
     
-        .header_left {
+        .header_left_1 {
             width: (167 / @vw);
             height: (44 / @vw);
+        }
+
+        .header_left_2 {
+            .header_btn {
+                border: none;
+                background-color: transparent;
+                background-image: url(../images/返回.png);
+                background-size: cover;
+            }
         }
     
         .header_right {
             display: flex;
             align-items: center;
-    
-            .header_btn {
-                width: (45 / @vw);
-                height: (45 / @vw);
-                border: 1px solid #bbb;
-                border-radius: 50%;
-                text-align: center;
-                line-height: (45 / @vw);
-                font-size: (14 / @vw);
-                overflow: hidden;
-    
-                a {
-                    display: inline-block;
-                    width: 100%;
-                    height: 100%;
-                }
-                
-                &:first-child {
-                    margin-right: (12 / @vw);
-                }
+
+        }
+        .header_btn {
+            width: (45 / @vw);
+            height: (45 / @vw);
+            border: 1px solid #bbb;
+            border-radius: 50%;
+            text-align: center;
+            line-height: (45 / @vw);
+            font-size: (14 / @vw);
+            overflow: hidden;
+
+            a {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+            }
+            
+            &:first-child {
+                margin-right: (12 / @vw);
             }
         }
-    
     }
     
     .container {
         position: relative;
         height: (672 / @vw);
         width: 100%;
-        background-image: url(../images/背景.jpg);
-        background-size: cover;
+        // background-image: url(../images/背景.jpg);
+        // background-size: cover;
         overflow: hidden;
         .triangle {
             position: absolute;
@@ -298,6 +308,109 @@
                 transform: rotate(-159deg);
             }
         }
+
+        .friend_invitation {
+            width: (106 / @vw);
+            height: (106 / @vw);
+            top: (103 / @vw);
+            left: (71 / @vw);
+            transform: rotate(-16deg);
+    
+            span {           
+                top: (16 / @vw);
+                left: (5 / @vw);
+                transform: rotate(16deg);
+            }
+        }
+    
+        .random_matching {
+            width: (111 / @vw);
+            height: (104 / @vw);
+            top: (249 / @vw);
+            left: (120 / @vw);
+            transform: rotate(310deg);
+    
+            span {           
+                top: (20 / @vw);
+                left: (5 / @vw);
+                transform: rotate(-310deg);
+            }
+        }
+    
+        .enter_Learning {
+            width: (157 / @vw);
+            height: (153 / @vw);
+            top: (340 / @vw);
+            left: (183 / @vw);
+            transform: rotate(174deg);
+    
+            span {           
+                top: (32 / @vw);
+                left: (20 / @vw);
+                transform: rotate(-174deg);
+            }
+        }
+    }
+
+    .popup {
+        display: none;
+        z-index: 1000;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: (798 / @vw);
+        background-color: rgba(0, 0, 0, 0.312);
+    
+        .friend_invitation {
+            z-index: 1000;
+            position: absolute;
+            top: (108 / @vw);
+            left: (40 / @vw);
+            width: (314 / @vw);
+            height: (490 / @vw);
+            background-color: #fff;
+            border: (1 / @vw) solid #bbb;
+            border-radius: (28 / @vw);
+    
+            .fi_header {
+                width: 100%;
+                height: (73 / @vw);
+                border-bottom: (4 / @vw) solid #000;
+                overflow: hidden;
+    
+                h1 {
+                    width: 100%;
+                    height: 100%;
+                    line-height: (73 / @vw);
+                    text-align: center;
+                    font-size: (28 / @vw);
+                }
+            }
+    
+            .menu {
+                width: 100%;
+    
+                li {
+                    width: 100%;
+                    height: (64 / @vw);
+                    border: 1px solid #bbb;
+                    padding: 0 (16 / @vw);
+                    line-height: (64 / @vw);
+                    margin-top: (4 / @vw);
+    
+                    img {
+                        width: (40 / @vw);
+                        height: (40 / @vw);
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+    .hidden {
+        display: none;
     }
 }
 

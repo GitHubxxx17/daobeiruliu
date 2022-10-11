@@ -74,15 +74,18 @@
 
             <div class="function_page">
                 <header>
-                    <div class="header_left">
+                    <div class="header_left_1">
                         <img src="./images/logo.png">
+                    </div>
+                    <div class="header_left_2 hidden">
+                        <button class="header_btn"></button>
                     </div>
                     <div class="header_right">
                         <button class="header_btn">
                             <a href="./callup.html">召集</a>
                         </button>
                         <button class="header_btn fri">
-                            <a href="#">好友</a>
+                            <a href="javascript:;">好友</a>
                         </button>
                     </div>
                 </header>
@@ -92,7 +95,35 @@
                     </div>
 
                     <div class="triangle learning_model">
-                        <a href="./learningModel.html"><span>学习模式</span></a>
+                        <a href="javascript:;"><span>学习模式</span></a>
+                    </div>
+
+                    <div class="triangle friend_invitation hidden">
+                        <span>好友邀请</span>
+                    </div>
+            
+                    <div class="triangle random_matching hidden">
+                      <a href="#"><span>随机匹配</span></a>
+                    </div>
+            
+                    <div class="triangle enter_Learning hidden">
+                        <a href="./EnterLearning.html"><span>进入学习</span></a>
+                    </div>
+                </div>
+                <div class="popup">
+                    <div class="friend_invitation">
+                        <div class="fi_header">
+                            <h1>好友</h1>
+                        </div>
+                        <div class="menu">
+                            <ul>
+                                <li>
+                                    <img src="./images/头像女-1.jpg" alt="">
+                                </li>
+                                <li><img src="./images/头像女-1.jpg" alt=""></li>
+                                <li><img src="./images/头像女-1.jpg" alt=""></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -102,7 +133,6 @@
                     <div class="container">
                         <div class="head_portrait">
                             <div class="head_box">
-                                <!-- 上传的按钮 -->
                                 <input type="file" id="file" accept=".jpg">
                             </div>
                         </div>
@@ -221,7 +251,4 @@
 </body>
 <script src="./js/base.js"></script>
 <script src="./js/index.js"></script>
-
-<!-- <script src="./js/Personal.js"></script> -->
-
 </html>

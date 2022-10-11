@@ -7,6 +7,8 @@
 }
 body {
   font-family: '微软雅黑';
+  background-image: url(../images/背景.jpg);
+  background-size: cover;
 }
 img {
   vertical-align: middle;
@@ -111,6 +113,7 @@ header .header_btn a {
   height: 16.20253165vw;
   margin-top: 3.03797468vw;
   border: 0.25316456vw solid #bbb;
+  background-color: #fff;
 }
 .container .main li a {
   padding-left: 8.35443038vw;
@@ -123,6 +126,7 @@ header .header_btn a {
   border: 0.25316456vw solid #bbb;
   border-radius: 4.55696203vw;
   overflow: hidden;
+  background-color: #fff;
 }
 .container .Switch_account a,
 .container .Log_out a {

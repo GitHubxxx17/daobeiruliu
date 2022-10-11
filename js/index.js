@@ -211,7 +211,7 @@ var headBox = document.querySelector(".head_box");
 // 图片上传成功后创建 URL
 let imgUrl = '';
 //当文件上传按钮改变时发生的事件
-file.onchange = function(value) {
+file.onchange = function (value) {
     console.log(value.target.files)
     const fileList = value.target.files;
     if (fileList.length) {
@@ -225,11 +225,11 @@ file.onchange = function(value) {
 
 
 /* 2、拖拽上传 */
-headBox.ondragover = function() {
+headBox.ondragover = function () {
     return false;
 }
 
-headBox.ondrop = function(e) {
+headBox.ondrop = function (e) {
     //通过window.URL.createObjectURL(files[0])获得一个http格式的url路径
     imgUrl = window.URL.createObjectURL(e.dataTransfer.files[0]);
     //headPortrait盒子的背景图的路径改为imgUrl
@@ -238,6 +238,43 @@ headBox.ondrop = function(e) {
 }
 
 
+//点击进入学习模式
+$('.learning_model').onclick = () => {
+    for (let i = 0; i < $('.triangle').length; i++) {
+        if (i < 2)
+            $('.triangle')[i].classList.add('hidden');
+        else
+            $('.triangle')[i].classList.remove('hidden');
+    }
+
+    $('.header_left_1').classList.add('hidden');
+    $('.header_left_2').classList.remove('hidden');
+}
+
+//点击退出学习模式
+$('.header_left_2 button').onclick = () => {
+    for (let i = 0; i < $('.triangle').length; i++) {
+        if (i < 2)
+            $('.triangle')[i].classList.remove('hidden');
+        else
+            $('.triangle')[i].classList.add('hidden');
+    }
+
+    $('.header_left_1').classList.remove('hidden');
+    $('.header_left_2').classList.add('hidden');
+}
+
+
+//好友邀请窗口显示隐藏
+$('.container .friend_invitation').onclick = () => {
+    $('.popup').style.display = 'block';
+}
+
+$('.popup').onclick = () => {
+    $('.popup').style.display = 'none';
+}
+
+$('.popup .friend_invitation').onclick = (e) => e.stopPropagation();
 
 
 //底部导航栏动画
