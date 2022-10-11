@@ -173,7 +173,7 @@ a {
   left: 0;
   display: flex;
   width: 300%;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 .index_page {
   width: 100%;
@@ -355,7 +355,7 @@ a {
 .function_page header .header_left_2 .header_btn {
   border: none;
   background-color: transparent;
-  background-image: url(../images/返回.png);
+  background-image: url(../images/返回.jpg);
   background-size: cover;
 }
 .function_page header .header_right {
@@ -759,7 +759,7 @@ footer .footer_nav li a.nav_item_active {
   transform: translateY(-20%);
   font-size: 45px;
   /* 使用贝塞尔曲线 */
-  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 footer .footer_nav li a.nav_item_active .title {
   display: block;
@@ -775,5 +775,5 @@ footer .footer_nav .nav_indicator {
   left: calc(20px);
   z-index: 1;
   /* 贝塞尔曲线 */
-  transition: left 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: left 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
