@@ -26,22 +26,23 @@
         padding: 0 (11/@vw);
         width: (395/@vw);
         height: (56/@vw);
+        // background-color:#6dc2bf;
         background-image: url(../images/顶栏-1.jpg);
         background-size: cover;
         text-align: center;
         border: 1px solid rgba(187, 187, 187, 1);
     
         .search {
+            position: relative;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 (5/@vw);
+            padding-left: (5/@vw);
             width: (223/@vw);
             height: (32/@vw);
             border-radius: (16/@vw);
             background-color: rgba(255, 255, 255, 1);
             text-align: center;
-            border: 1px solid rgba(187, 187, 187, 1);
     
             input {
                 padding: 0 (5/@vw);
@@ -52,16 +53,17 @@
             }
     
             .searchicon {
-                width: (28/@vw);
-                height: (28/@vw);
-                line-height: (28/@vw);
-                background-image: url(../images/搜索.png);
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: (32/@vw);
+                height: (32/@vw);
+
+                background-image: url(../images/搜索-2.png);
+                // background-position: center center;
                 background-size: cover;
-                color: rgba(16, 16, 16, 1);
-                font-size: (12/@vw);
-                text-align: center;
-                border-radius: 100%;
-                background-color: #fff;
+                border-radius: 50%;
+                background-color: transparent;
                 border: none;
             }
         }
@@ -75,7 +77,6 @@
             font-size: (14/@vw);
             text-align: center;
             border-radius: 100%;
-            border: 1px solid rgba(187, 187, 187, 1);
             overflow: hidden;
     
             a {
@@ -90,6 +91,10 @@
         }
     
         .fri {
+            background-color: transparent;
+            background-image: url(../images/好友.png);
+            background-position: center;
+            background-size: (55/@vw);
             margin-left: (12/@vw);
         }
     }
@@ -146,11 +151,13 @@
         margin-top: (14/@vw);
         margin-bottom: (85/@vw);
         width: (375/@vw);
-        height: (430/@vw);
+        height: (480/@vw);
         border-radius: (19/@vw);
-        background-color: rgba(255, 255, 255, 1);
+        // background-color: rgba(255, 255, 255, 1);
+        background-color:  #cae0df;
         text-align: center;
-        border: 1px solid rgba(187, 187, 187, 1);
+        // border: 1px solid rgba(187, 187, 187, 1);
+        border: 1px solid #b4ece9;
         overflow: scroll;
         
         .title {
@@ -234,26 +241,30 @@
             display: flex;
             align-items: center;
 
+
+            .header_btn:last-child {
+                background-color: transparent;
+                background-image: url(../images/好友.png);
+                background-position: center;
+                background-size: (55/@vw);
+                margin-left: (12 / @vw);
+            }
         }
         .header_btn {
             width: (45 / @vw);
             height: (45 / @vw);
-            border: 1px solid #bbb;
             border-radius: 50%;
             text-align: center;
             line-height: (45 / @vw);
             font-size: (14 / @vw);
             overflow: hidden;
+            border: none;
 
             a {
                 display: inline-block;
                 width: 100%;
                 height: 100%;
-            }
-            
-            &:first-child {
-                margin-right: (12 / @vw);
-            }
+            } 
         }
     }
     
@@ -261,14 +272,14 @@
         position: relative;
         height: (672 / @vw);
         width: 100%;
-        // background-image: url(../images/背景.jpg);
-        // background-size: cover;
         overflow: hidden;
+        
         .triangle {
             position: absolute;
-            background: rgb(99, 203, 255);
+            background: #edfcff;
             clip-path: polygon(0 0, 100% 0, 0 100%, 0 0);
             overflow: hidden;
+            box-shadow: (3 / @vw) (7 / @vw) (6 / @vw) (1 / @vw) rgba(0, 0, 0, 0.374);
     
             a {
                 display: inline-block;
@@ -280,33 +291,34 @@
                 position: absolute;
                 font-size: (14 / @vw);
             }
+ 
         }
     
         .edit {
-            width: (100 / @vw);
-            height: (100 / @vw);
-            top: (255 / @vw);
-            left: (75 / @vw);
-            transform: rotate(282deg);
+            width: (128 / @vw);
+            height: (206 / @vw);
+            top: (106 / @vw);
+            left: (78 / @vw);
+            transform: rotate(159deg);
     
             span {           
-                top: (20 / @vw);
+                top: (60 / @vw);
                 left: (20 / @vw);
-                transform: rotate(-282deg);
+                transform: rotate(-159deg);
             }
         }
     
         .learning_model {
-            width: (148 / @vw);
-            height: (144 / @vw);
-            top: (314 / @vw);
-            left: (189 / @vw);
-            transform: rotate(159deg);
+            width: (206 / @vw);
+            height: (139 / @vw);
+            top: (74 / @vw);
+            left: (174 / @vw);
+            transform: rotate(240deg);
     
             span {           
-                top: (32 / @vw);
-                left: (20 / @vw);
-                transform: rotate(-159deg);
+                top: (40 / @vw);
+                left: (28 / @vw);
+                transform: rotate(-240deg);
             }
         }
 
@@ -649,18 +661,19 @@ footer {
     left: 0px;
     bottom: 0px;
     width: (395/@vw);
-    height: (80/@vw);
+    height: (60/@vw);
     background-color: rgba(255, 255, 255, 1);
     text-align: center;
 
     .footer_nav{
         position: relative;
         display: flex;
-        background-color: rgb(95, 183, 234);
-        height: (80/@vw);
+        // background-color: rgb(95, 183, 234);
+        background-color: #6dc2bf;
+        height: (60/@vw);
         li a{
             color: var(--color-nav);
-            width: (131/@vw);
+            width: (130/@vw);
             height: 100%;
             /* 转为行内元素 */
             display: inline-grid;
@@ -704,7 +717,8 @@ footer {
             width: (90/@vw);
             height: (90/@vw);
             border-radius: 50%;
-            background-color: rgb(95, 183, 234);
+            // background-color: rgb(95, 183, 234);
+            background-color: #6dc2bf;
             position: absolute;
             top: -(35/@vw);
             left: calc(20px);

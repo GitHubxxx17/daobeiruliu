@@ -193,6 +193,7 @@ header .btn_current {
   border: 1px solid #bbb;
 }
 .popup {
+  display: none;
   z-index: 1000;
   position: absolute;
   top: 0;
